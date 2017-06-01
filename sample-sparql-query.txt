@@ -5,7 +5,7 @@ PREFIX gs: <http://glyconavi.org/glycosample/>
 PREFIX ga: <http://glyconavi.org/glyabun/>
 PREFIX exterms: <http://www.example.org/terms/>
 PREFIX chebi: <http://bio2rdf.org/chebi:>
-SELECT distinct ?ga ?gf ?gi ?from ?to ?gcomp  ?glycan  ?mod_glycan ?method
+SELECT distinct ?ga ?gf ?gi ?from ?to ?gcomp  ?glycan  ?mod_glycan ?method  ?wurcs  ?mod_wurcs
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 # glycoconjugate
@@ -26,8 +26,10 @@ VALUES ?ga_id { "GA_1"}
 # glycan structure
 ?gi sio:has-part ?gcomp .
 ?gcomp chebi:32854 ?glycan .
+?glycan ga:wurcs ?wurcs .
 ?glycan ga:modified ?mod .
 ?mod ga:modified_glycan ?mod_glycan .
+?mod_glycan ga:wurcs ?mod_wurcs .
 ?mod ga:method ?method .
 
 
