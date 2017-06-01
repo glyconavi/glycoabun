@@ -1,3 +1,3 @@
-# glyabun
+# glycoabun
 
 glycan abundance ratio
