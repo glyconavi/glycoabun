@@ -4,7 +4,8 @@ PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX gs: <http://glyconavi.org/glycosample/>
 PREFIX ga: <http://glyconavi.org/glyabun/>
 PREFIX exterms: <http://www.example.org/terms/>
-SELECT distinct ?ga ?gf ?gi ?from ?to
+PREFIX chebi: <http://bio2rdf.org/chebi:>
+SELECT distinct ?ga ?gf ?gi ?from ?to ?gcomp  ?glycan  ?mod_glycan ?method
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 # glycoconjugate
@@ -22,6 +23,13 @@ VALUES ?ga_id { "GA_1"}
 #?ga ?p ?o.
 ?ga sio:has-direct-part ?gf .
 ?gf sio:has-proper-part ?gi .
+# glycan structure
+?gi sio:has-part ?gcomp .
+?gcomp chebi:32854 ?glycan .
+?glycan ga:modified ?mod .
+?mod ga:modified_glycan ?mod_glycan .
+?mod ga:method ?method .
+
 
 # abundance ratio
 ?gi exterms:percentage ?par .
