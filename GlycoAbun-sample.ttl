@@ -74,7 +74,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/GI_1/16/to>	sio:has-unit	UO:0000193 .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/GI_1/16/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/GI_1/16/to>	rdf:type	ga:ExactRatio .
-<http://glyconavi.org/glycobio/BR_1/GA_1/GF_1>	sio:covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/Loc1> .
+<http://glyconavi.org/glycobio/BR_1/GA_1/GF_1>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/Loc1>	rdf:type	faldo:Region .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_1/Loc1/begin>	faldo:position	"56" .
@@ -115,7 +115,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/GI_1/4/to>	sio:has-unit	UO:0000193 .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/GI_1/4/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/GI_1/4/to>	rdf:type	ga:ExactRatio .
-<http://glyconavi.org/glycobio/BR_1/GA_1/GF_2>	sio:covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1> .
+<http://glyconavi.org/glycobio/BR_1/GA_1/GF_2>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1>	rdf:type	faldo:Region .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1/begin>	faldo:position	"56" .
