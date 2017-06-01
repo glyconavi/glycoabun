@@ -1,0 +1,22 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX gs: <http://glyconavi.org/glycosample/>
+PREFIX ga: <http://glyconavi.org/glyabun/>
+SELECT *
+FROM <http://glyconavi.org/database/glycoabun>
+WHERE {
+# glycoconjugate
+?ga dcterms:identifier  ?ga_id .
+VALUES ?ga_id { "GA_1"}
+# ?br: bioresource
+?br sio:has-component-part ?ga .
+# ?gs: glycosample
+?gs glycan:has_resource_entry ?br .
+?gs gs:glycosample_id ?gs_id .
+# protein
+?ga sio:has-component-part ?gf .
+?gf ga:uniprot_id ?uniprot_id .
+
+}
+LIMIT 100
