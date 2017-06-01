@@ -8,7 +8,7 @@ PREFIX ga: <http://glyconavi.org/glyabun/>
 PREFIX exterms: <http://www.example.org/terms/>
 PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
-SELECT distinct ?ga_id ?gf ?gi ?from ?to ?order  ?gcomp ?pos  ?method  ?wurcs  ?mod_wurcs ?uniprot_protein
+SELECT ?ga_id ?gf ?gi ?from ?to ?order  ?gcomp ?pos  ?method  ?wurcs  ?mod_wurcs ?uniprot_protein
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 GRAPH <http://glyconavi.org/database/glycoabun> {
@@ -29,7 +29,7 @@ VALUES ?ga_id { "GA_1"}
 ?gf sio:has-proper-part ?gi .
 ?gf ga:order ?order .
 #glycosylation site
-?gf sio:is-covalently-connected-to ?loc .
+?gf sio:covalently-connected-to ?loc .
 ?loc faldo:begin ?begin .
 ?begin faldo:position ?pos .
 
