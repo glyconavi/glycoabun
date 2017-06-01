@@ -8,7 +8,7 @@ PREFIX ga: <http://glyconavi.org/glyabun/>
 PREFIX exterms: <http://www.example.org/terms/>
 PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
-SELECT ?ga_id ?gf ?gi ?from ?to ?order  ?gcomp ?pos  ?method  ?wurcs  ?mod_wurcs ?uniprot_protein
+SELECT ?ga_id ?from ?to ?order  ?wurcs ?method ?mod_wurcs ?uniprot_id ?pos ?seq ?len
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 GRAPH <http://glyconavi.org/database/glycoabun> {
@@ -24,6 +24,9 @@ VALUES ?ga_id { "GA_1"}
 ?ga sio:has-component-part ?pf .
 ?pf ga:uniprot_id ?uniprot_id .
 ?pf chebi:32854 ?uniprot_protein .
+?pf ga:aa_sequence ?seq.
+?pf ga:aa_length ?len .
+
 # parcentage
 ?ga sio:has-direct-part ?gf .
 ?gf sio:has-proper-part ?gi .
@@ -41,6 +44,7 @@ VALUES ?ga_id { "GA_1"}
 ?mod ga:modified_glycan ?mod_glycan .
 ?mod_glycan ga:wurcs ?mod_wurcs .
 ?mod ga:method ?method .
+#?method rdf:type ?method_type .
 # abundance ratio
 ?gi exterms:percentage ?par .
 ?par ga:from ?par_from .
