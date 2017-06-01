@@ -3,7 +3,8 @@ PREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX gs: <http://glyconavi.org/glycosample/>
 PREFIX ga: <http://glyconavi.org/glyabun/>
-SELECT *
+PREFIX exterms: <http://www.example.org/terms/>
+SELECT distinct ?ga ?gf ?gi ?from ?to
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 # glycoconjugate
@@ -15,8 +16,19 @@ VALUES ?ga_id { "GA_1"}
 ?gs glycan:has_resource_entry ?br .
 ?gs gs:glycosample_id ?gs_id .
 # protein
-?ga sio:has-component-part ?gf .
-?gf ga:uniprot_id ?uniprot_id .
+?ga sio:has-component-part ?pf .
+?pf ga:uniprot_id ?uniprot_id .
+# parcentage
+#?ga ?p ?o.
+?ga sio:has-direct-part ?gf .
+?gf sio:has-proper-part ?gi .
+
+# abundance ratio
+?gi exterms:percentage ?par .
+?par ga:from ?par_from .
+?par_from sio:has-value ?from .
+?par ga:to ?par_to .
+?par_to sio:has-value ?to .
 
 }
 LIMIT 100
