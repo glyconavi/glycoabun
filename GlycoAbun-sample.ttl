@@ -123,3 +123,4 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1/end> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1/end>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/GA_1/GF_2/Loc1/end>	rdf:type	faldo:ExactPosition .
+
