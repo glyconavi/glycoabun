@@ -1,3 +1,5 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>
 PREFIX sio: <http://semanticscience.org/resource/>
@@ -5,9 +7,11 @@ PREFIX gs: <http://glyconavi.org/glycosample/>
 PREFIX ga: <http://glyconavi.org/glyabun/>
 PREFIX exterms: <http://www.example.org/terms/>
 PREFIX chebi: <http://bio2rdf.org/chebi:>
-SELECT distinct ?ga ?gf ?gi ?from ?to ?gcomp  ?glycan  ?mod_glycan ?method  ?wurcs  ?mod_wurcs
+PREFIX faldo: <http://biohackathon.org/resource/faldo#>
+SELECT distinct ?ga_id ?gf ?gi ?from ?to ?order  ?gcomp ?pos  ?method  ?wurcs  ?mod_wurcs ?uniprot_protein
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
+GRAPH <http://glyconavi.org/database/glycoabun> {
 # glycoconjugate
 ?ga dcterms:identifier  ?ga_id .
 VALUES ?ga_id { "GA_1"}
@@ -19,10 +23,16 @@ VALUES ?ga_id { "GA_1"}
 # protein
 ?ga sio:has-component-part ?pf .
 ?pf ga:uniprot_id ?uniprot_id .
+?pf chebi:32854 ?uniprot_protein .
 # parcentage
-#?ga ?p ?o.
 ?ga sio:has-direct-part ?gf .
 ?gf sio:has-proper-part ?gi .
+?gf ga:order ?order .
+#glycosylation site
+?gf sio:is-covalently-connected-to ?loc .
+?loc faldo:begin ?begin .
+?begin faldo:position ?pos .
+
 # glycan structure
 ?gi sio:has-part ?gcomp .
 ?gcomp chebi:32854 ?glycan .
@@ -31,14 +41,15 @@ VALUES ?ga_id { "GA_1"}
 ?mod ga:modified_glycan ?mod_glycan .
 ?mod_glycan ga:wurcs ?mod_wurcs .
 ?mod ga:method ?method .
-
-
 # abundance ratio
 ?gi exterms:percentage ?par .
 ?par ga:from ?par_from .
 ?par_from sio:has-value ?from .
 ?par ga:to ?par_to .
 ?par_to sio:has-value ?to .
+}
+
+
 
 }
 LIMIT 100
