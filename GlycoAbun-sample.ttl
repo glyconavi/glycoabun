@@ -35,6 +35,8 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_1/GA_1>	rdfs:label	"oLH" .
 <http://glyconavi.org/glycobio/BR_1/GA_1>	rdf:type	glycan:Glycoprotein .
 <http://glyconavi.org/glycobio/BR_1/GA_1/P1>	ga:protein_subunit	"oLHα" .
+<http://glyconavi.org/glycobio/BR_1/GA_1/P1>	ga:aa_sequence	"MDYYRKYAAAILAILSLFLQILHSFPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPKNITSEATCCVAKAFTKATVMGNVRVENHTECHCSTCYYHKS" .
+<http://glyconavi.org/glycobio/BR_1/GA_1/P1>	ga:aa_length	"120" .
 <http://glyconavi.org/glycobio/BR_1/GA_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/GA_1/P1> .
 <http://glyconavi.org/glycobio/BR_1/GA_1/P1>	dcterms:identifier	"P01218" .
 <http://glyconavi.org/glycobio/BR_1/GA_1/P1>	ga:uniprot_id	"P01218" .
