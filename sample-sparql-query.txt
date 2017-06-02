@@ -8,13 +8,14 @@ PREFIX ga: <http://glyconavi.org/glyabun/>
 PREFIX exterms: <http://www.example.org/terms/>
 PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
-SELECT ?ga_id ?from ?to ?order  ?wurcs ?glycan_img ?method ?mod_wurcs ?mod_glycan_img ?uniprot_id ?pos ?seq ?len
+SELECT ?ga_id ?from ?to ?order  ?wurcs ?glycan_img ?method ?mod_wurcs ?mod_glycan_img ?uniprot_id ?pos ?seq ?len ?ref
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 GRAPH <http://glyconavi.org/database/glycoabun> {
 # glycoconjugate
 ?ga dcterms:identifier  ?ga_id .
 VALUES ?ga_id { "GA_1"}
+?ga dcterms:refrence ?ref .
 # ?br: bioresource
 ?br sio:has-component-part ?ga .
 # ?gs: glycosample
