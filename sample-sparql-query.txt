@@ -8,27 +8,30 @@ PREFIX ga: <http://glyconavi.org/glyabun/>
 PREFIX exterms: <http://www.example.org/terms/>
 PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
-SELECT ?ga_id ?from ?to ?order  ?wurcs ?glycan_img ?method ?mod_wurcs ?mod_glycan_img ?uniprot_id ?pos ?seq ?len ?ref
+PREFIX up: <http://purl.uniprot.org/core/>
+
+SELECT ?gs_id ?rc_id ?uniprot_id ?pos ?order ?from ?to  ?wurcs ?mod_wurcs
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
-GRAPH <http://glyconavi.org/database/glycoabun> {
-# glycoconjugate
-?ga dcterms:identifier  ?ga_id .
-VALUES ?ga_id { "GA_1"}
-?ga dcterms:refrence ?ref .
-# ?br: bioresource
-?br sio:has-component-part ?ga .
-# ?gs: glycosample
-?gs glycan:has_resource_entry ?br .
-?gs gs:glycosample_id ?gs_id .
-# protein
-?ga sio:has-component-part ?pf .
-?pf ga:uniprot_id ?uniprot_id .
-?pf chebi:32854 ?uniprot_protein .
-?pf ga:aa_sequence ?seq.
-?pf ga:aa_length ?len .
 
-# parcentage
+# glycosample
+?gs gs:glycosample_id ?gs_id .
+?gs glycan:has_resource_entry ?br .
+
+# ?br: bioresource
+?br sio:has-component-part ?rc .
+?rc ga:id ?rc_id .
+
+# resource component
+?rc sio:has-component-part ?pc .
+?pc ga:aa_sequence ?seq .
+?pc ga:aa_length ?len .
+?pc chebi:32854 ?uniprot .
+?uniprot rdf:type up:Protein .
+?pc dcterms:identifier ?uniprot_id .
+
+# abundance
+?rc ga:has_abundance ?ga .
 ?ga sio:has-direct-part ?gf .
 ?gf sio:has-proper-part ?gi .
 ?gf ga:order ?order .
@@ -47,6 +50,7 @@ VALUES ?ga_id { "GA_1"}
 ?mod_glycan ga:wurcs ?mod_wurcs .
 ?mod_glycan foaf:depiction ?mod_glycan_img .
 ?mod ga:method ?method .
+
 #?method rdf:type ?method_type .
 # abundance ratio
 ?gi exterms:percentage ?par .
@@ -54,9 +58,8 @@ VALUES ?ga_id { "GA_1"}
 ?par_from sio:has-value ?from .
 ?par ga:to ?par_to .
 ?par_to sio:has-value ?to .
-}
-
 
 
 }
+order by ?gs_id  ?pos ?from
 LIMIT 100
