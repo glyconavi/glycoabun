@@ -1,3 +1,3 @@
-# glycoabun
+# GlycoNAVI: GlycoAbun
 
-glycan abundance ratio
+GlycoAbun is a content of GlycoNAVI. it is storing glycan abundance ratio for glycoprotein et al.
