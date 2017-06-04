@@ -1,0 +1,23 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX taxon:<http://purl.uniprot.org/taxonomy/> 
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX faldo:<http://biohackathon.org/resource/faldo#> 
+SELECT ?protein ?annotation ?begin ?end ?value
+WHERE
+{
+  		VALUES ?protein { <http://purl.uniprot.org/uniprot/P01218> }
+		?protein a up:Protein ;
+			up:annotation ?annotation .
+  
+		?annotation a up:Signal_Peptide_Annotation ;
+			up:range/faldo:begin
+				[ faldo:position ?begin ;
+				  faldo:reference ?sequence ] .
+  
+	  ?annotation a up:Signal_Peptide_Annotation ;
+			up:range/faldo:end
+				[ faldo:position ?end ;
+				  faldo:reference ?sequence ] .
+  
+		?sequence rdf:value ?value .
+}
