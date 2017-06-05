@@ -1,0 +1,21 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX taxon:<http://purl.uniprot.org/taxonomy/> 
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX faldo:<http://biohackathon.org/resource/faldo#> 
+SELECT DISTINCT ?protein ?fullName ?shortName ?organism_scientificName
+# SELECT DISTINCT ?p
+WHERE
+{
+  		VALUES ?protein { <http://purl.uniprot.org/uniprot/P01218> }
+		?protein a up:Protein ;
+			<http://purl.uniprot.org/core/recommendedName> ?recommendedName ;  
+        <http://purl.uniprot.org/core/alternativeName> ?alternativeName ;
+        <http://purl.uniprot.org/core/organism>  ?organism .
+  
+  ?recommendedName <http://purl.uniprot.org/core/fullName> ?fullName .
+  ?alternativeName <http://purl.uniprot.org/core/shortName> ?shortName .
+  ?organism <http://purl.uniprot.org/core/scientificName> ?organism_scientificName .
+  	
+  
+}
+limit 100
