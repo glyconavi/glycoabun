@@ -23,3 +23,41 @@ WHERE
   
 		?sequence rdf:value ?value .
 }
+
+
+# GET
+http://sparql.uniprot.org/sparql?query=PREFIX+up%3a%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2f%3E+%0d%0aPREFIX+taxon%3a%3Chttp%3a%2f%2fpurl.uniprot.org%2ftaxonomy%2f%3E+%0d%0aPREFIX+rdf%3a%3Chttp%3a%2f%2fwww.w3.org%2f1999%2f02%2f22-rdf-syntax-ns%23%3E+%0d%0aPREFIX+faldo%3a%3Chttp%3a%2f%2fbiohackathon.org%2fresource%2ffaldo%23%3E+%0d%0aSELECT+%3fprotein+%3fannotation+%3fbegin+%3fend+%3fvalue%0d%0aWHERE%0d%0a%7b%0d%0a++%09%09VALUES+%3fprotein+%7b+%3Chttp%3a%2f%2fpurl.uniprot.org%2funiprot%2fP01218%3E+%7d%0d%0a%09%09%3fprotein+a+up%3aProtein+%3b%0d%0a%09%09%09up%3aannotation+%3fannotation+.%0d%0a++%0d%0a%09%09%3fannotation+a+up%3aSignal_Peptide_Annotation+%3b%0d%0a%09%09%09up%3arange%2ffaldo%3abegin%0d%0a%09%09%09%09%5b+faldo%3aposition+%3fbegin+%3b%0d%0a%09%09%09%09++faldo%3areference+%3fsequence+%5d+.%0d%0a++%0d%0a%09++%3fannotation+a+up%3aSignal_Peptide_Annotation+%3b%0d%0a%09%09%09up%3arange%2ffaldo%3aend%0d%0a%09%09%09%09%5b+faldo%3aposition+%3fend+%3b%0d%0a%09%09%09%09++faldo%3areference+%3fsequence+%5d+.%0d%0a++%0d%0a%09%09%3fsequence+rdf%3avalue+%3fvalue+.%0d%0a%7d&format=srj
+
+# OUTPUT JSON
+
+{
+  "head" : {
+    "vars" : [ "protein", "annotation", "begin", "end", "value" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "annotation" : {
+        "type" : "uri",
+        "value" : "http://purl.uniprot.org/uniprot/P01218#SIP4F531D524579AE8F"
+      },
+      "protein" : {
+        "type" : "uri",
+        "value" : "http://purl.uniprot.org/uniprot/P01218"
+      },
+      "end" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#int",
+        "type" : "literal",
+        "value" : "24"
+      },
+      "begin" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#int",
+        "type" : "literal",
+        "value" : "1"
+      },
+      "value" : {
+        "type" : "literal",
+        "value" : "MDYYRKYAAAILAILSLFLQILHSFPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPKNITSEATCCVAKAFTKATVMGNVRVENHTECHCSTCYYHKS"
+      }
+    } ]
+  }
+}
