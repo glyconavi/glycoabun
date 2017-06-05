@@ -1,4 +1,5 @@
-http://sparql.uniprot.org/sparql?query=PREFIX%20up%3A%3Chttp%3A%2F%2Fpurl.uniprot.org%2Fcore%2F%3E%20%0D%0APREFIX%20taxon%3A%3Chttp%3A%2F%2Fpurl.uniprot.org%2Ftaxonomy%2F%3E%20%0D%0APREFIX%20rdf%3A%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%20%0D%0APREFIX%20faldo%3A%3Chttp%3A%2F%2Fbiohackathon.org%2Fresource%2Ffaldo%23%3E%20%0D%0ASELECT%20%3Fprotein%20%3Fannotation%20%3Fbegin%20%3Fend%20%20%3Fcomment%20%3Faa_sequence%0D%0A%23SELECT%20DISTINCT%20%3Fp%0D%0AWHERE%0D%0A%7B%0D%0A%20%20%09%09%23VALUES%20%3Fprotein%20%7B%20%3Chttp%3A%2F%2Fpurl.uniprot.org%2Funiprot%2FP01218%3E%20%7D%0D%0A%09%09%3Fprotein%20a%20up%3AProtein%20%3B%0D%0A%09%09%09up%3Aannotation%20%3Fannotation%20.%0D%0A%20%20%09%0D%0A%20%20%09%09%3Fannotation%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23comment%3E%20%3Fcomment%20.%0D%0A%20%20%0D%0A%09%09%3Fannotation%20a%20up%3AGlycosylation_Annotation%20%3B%0D%0A%09%09%09up%3Arange%2Ffaldo%3Abegin%0D%0A%09%09%09%09%5B%20faldo%3Aposition%20%3Fbegin%20%3B%0D%0A%09%09%09%09%20%20faldo%3Areference%20%3Fsequence%20%5D%20.%0D%0A%20%20%0D%0A%09%20%20%3Fannotation%20a%20up%3AGlycosylation_Annotation%20%3B%0D%0A%09%09%09up%3Arange%2Ffaldo%3Aend%0D%0A%09%09%09%09%5B%20faldo%3Aposition%20%3Fend%20%3B%0D%0A%09%09%09%09%20%20faldo%3Areference%20%3Fsequence%20%5D%20.%0D%0A%20%20%0D%0A%09%09%3Fsequence%20rdf%3Avalue%20%3Faa_sequence%20.%0D%0A%7D%0D%0Alimit%20100&format=srj
+http://sparql.uniprot.org/sparql?query=PREFIX+up%3a%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2f%3E+%0d%0aPREFIX+taxon%3a%3Chttp%3a%2f%2fpurl.uniprot.org%2ftaxonomy%2f%3E+%0d%0aPREFIX+rdf%3a%3Chttp%3a%2f%2fwww.w3.org%2f1999%2f02%2f22-rdf-syntax-ns%23%3E+%0d%0aPREFIX+faldo%3a%3Chttp%3a%2f%2fbiohackathon.org%2fresource%2ffaldo%23%3E+%0d%0aSELECT+%3fprotein+%3fannotation+%3fbegin+%3fend++%3fcomment+%3faa_sequence%0d%0a%23SELECT+DISTINCT+%3fp%0d%0aWHERE%0d%0a%7b%0d%0a++%09%09VALUES+%3fprotein+%7b+%3Chttp%3a%2f%2fpurl.uniprot.org%2funiprot%2fP01218%3E+%7d%0d%0a%09%09%3fprotein+a+up%3aProtein+%3b%0d%0a%09%09%09up%3aannotation+%3fannotation+.%0d%0a++%09%0d%0a++%09%09%3fannotation+%3Chttp%3a%2f%2fwww.w3.org%2f2000%2f01%2frdf-schema%23comment%3E+%3fcomment+.%0d%0a++%0d%0a%09%09%3fannotation+a+up%3aGlycosylation_Annotation+%3b%0d%0a%09%09%09up%3arange%2ffaldo%3abegin%0d%0a%09%09%09%09%5b+faldo%3aposition+%3fbegin+%3b%0d%0a%09%09%09%09++faldo%3areference+%3fsequence+%5d+.%0d%0a++%0d%0a%09++%3fannotation+a+up%3aGlycosylation_Annotation+%3b%0d%0a%09%09%09up%3arange%2ffaldo%3aend%0d%0a%09%09%09%09%5b+faldo%3aposition+%3fend+%3b%0d%0a%09%09%09%09++faldo%3areference+%3fsequence+%5d+.%0d%0a++%0d%0a%09%09%3fsequence+rdf%3avalue+%3faa_sequence+.%0d%0a%7d%0d%0alimit+100&format=srj
+
 
 # SPARQL Query
 http://sparql.uniprot.org/sparql?query=PREFIX up:<http://purl.uniprot.org/core/> 
@@ -9,7 +10,7 @@ SELECT ?protein ?annotation ?begin ?end  ?comment ?aa_sequence
 #SELECT DISTINCT ?p
 WHERE
 {
-  		#VALUES ?protein { <http://purl.uniprot.org/uniprot/P01218> }
+  		VALUES ?protein { <http://purl.uniprot.org/uniprot/P01218> }
 		?protein a up:Protein ;
 			up:annotation ?annotation .
   	
@@ -30,6 +31,7 @@ WHERE
 limit 100
 
 # OUTPUT JSON FORMAT
+
 {
   "head" : {
     "vars" : [ "protein", "annotation", "begin", "end", "comment", "aa_sequence" ]
@@ -38,29 +40,56 @@ limit 100
     "bindings" : [ {
       "annotation" : {
         "type" : "uri",
-        "value" : "http://purl.uniprot.org/uniprot/B0R8E4#SIPF71CC492AA640611"
+        "value" : "http://purl.uniprot.org/annotation/CAR_000038"
       },
       "aa_sequence" : {
         "type" : "literal",
-        "value" : "MTDTTGKLRAVLLTALMVGSVIGAGVAFTGGAAAANASDLNDYQRFNENTNYTYSTASEDGKTEGSVASGATIFQGEEDVTFRKLDNEKEVSPATLSRTGGSDEGVPLQMPIPEDQSTGSYDSNGPDNDEADFGVTVQSPSVTMLEVRNNADNDVTGGVLNTQQDESSIAVDYNYYAAEDLELTVEDEDGLDVTDEILAADQSGGAYEDGTGNNGPNTLRFDIDPNNVDAGDYTVSVEGVEDLDFGDATESASVTISSSNKASLNLAEDEVVQGANLKYTIENSPEGNYHAVTIDSSDFRDSSSGADAAKVMRSVGDTVDTGLVVDNDSTTEIVDDYENTSISDVDYAYAIVEIDDGNGVGSIETQYLDDSSADIDLYPASDTEDAPDYVNSNEELTNGSALDGVSTDDDTDFDVTQGDITLDNPTGAYVVGSEVDINGTANEGTDDVVLYARDNNDFELVTVDGEKSIEVDSDDTFEEEDITLSDGDKGGDDILGLPGTYRLGIIAKSDAVNSSGGVKDNIDTSDFNQGVSSTSSIRVTDTELTASFETYNGQVADDDNQIDVEGTAPGKDNVAAIIIGSRGKVKFQSISVDSDDTFDEEDIDISELRQGSASAHILSSGRDGKFGEDTANSISDLEDEVGNYTSGSPTGDQIRDRILSNTVDDTASDDLIVTQQFRLVDGLTTIEATEGGEAGGSLTVMGTTNRKADDNTITVELLQGDASIEINSTDEWNSDGQWSVDVPLSNVEPGNYTVEADDGDNTDRQNVEIVEELEEPDQTTVDQPENNQTMTTTMTETTTETTTEMTTTQENTTENGSEGTSDGESGGSIPGFGVGVALVAVLGAALLALRQN"
+        "value" : "MDYYRKYAAAILAILSLFLQILHSFPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPKNITSEATCCVAKAFTKATVMGNVRVENHTECHCSTCYYHKS"
       },
       "protein" : {
         "type" : "uri",
-        "value" : "http://purl.uniprot.org/uniprot/B0R8E4"
+        "value" : "http://purl.uniprot.org/uniprot/P01218"
       },
       "end" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#int",
         "type" : "literal",
-        "value" : "806"
+        "value" : "80"
       },
       "comment" : {
         "type" : "literal",
-        "value" : "O-linked (Gal...) threonine"
+        "value" : "N-linked (GlcNAc...) asparagine"
       },
       "begin" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#int",
         "type" : "literal",
-        "value" : "806"
+        "value" : "80"
+      }
+    }, {
+      "annotation" : {
+        "type" : "uri",
+        "value" : "http://purl.uniprot.org/annotation/CAR_000039"
+      },
+      "aa_sequence" : {
+        "type" : "literal",
+        "value" : "MDYYRKYAAAILAILSLFLQILHSFPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPKNITSEATCCVAKAFTKATVMGNVRVENHTECHCSTCYYHKS"
+      },
+      "protein" : {
+        "type" : "uri",
+        "value" : "http://purl.uniprot.org/uniprot/P01218"
+      },
+      "end" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#int",
+        "type" : "literal",
+        "value" : "106"
+      },
+      "comment" : {
+        "type" : "literal",
+        "value" : "N-linked (GlcNAc...) asparagine"
+      },
+      "begin" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#int",
+        "type" : "literal",
+        "value" : "106"
       }
     } ]
   }
