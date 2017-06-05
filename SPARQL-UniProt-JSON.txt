@@ -1,0 +1,30 @@
+http://sparql.uniprot.org/sparql?query=PREFIX%20up%3A%3Chttp%3A%2F%2Fpurl.uniprot.org%2Fcore%2F%3E%20%0D%0APREFIX%20taxon%3A%3Chttp%3A%2F%2Fpurl.uniprot.org%2Ftaxonomy%2F%3E%20%0D%0APREFIX%20rdf%3A%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%20%0D%0APREFIX%20faldo%3A%3Chttp%3A%2F%2Fbiohackathon.org%2Fresource%2Ffaldo%23%3E%20%0D%0ASELECT%20%3Fprotein%20%3Fannotation%20%3Fbegin%20%3Fend%20%20%3Fcomment%20%3Faa_sequence%0D%0A%23SELECT%20DISTINCT%20%3Fp%0D%0AWHERE%0D%0A%7B%0D%0A%20%20%09%09%23VALUES%20%3Fprotein%20%7B%20%3Chttp%3A%2F%2Fpurl.uniprot.org%2Funiprot%2FP01218%3E%20%7D%0D%0A%09%09%3Fprotein%20a%20up%3AProtein%20%3B%0D%0A%09%09%09up%3Aannotation%20%3Fannotation%20.%0D%0A%20%20%09%0D%0A%20%20%09%09%3Fannotation%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23comment%3E%20%3Fcomment%20.%0D%0A%20%20%0D%0A%09%09%3Fannotation%20a%20up%3AGlycosylation_Annotation%20%3B%0D%0A%09%09%09up%3Arange%2Ffaldo%3Abegin%0D%0A%09%09%09%09%5B%20faldo%3Aposition%20%3Fbegin%20%3B%0D%0A%09%09%09%09%20%20faldo%3Areference%20%3Fsequence%20%5D%20.%0D%0A%20%20%0D%0A%09%20%20%3Fannotation%20a%20up%3AGlycosylation_Annotation%20%3B%0D%0A%09%09%09up%3Arange%2Ffaldo%3Aend%0D%0A%09%09%09%09%5B%20faldo%3Aposition%20%3Fend%20%3B%0D%0A%09%09%09%09%20%20faldo%3Areference%20%3Fsequence%20%5D%20.%0D%0A%20%20%0D%0A%09%09%3Fsequence%20rdf%3Avalue%20%3Faa_sequence%20.%0D%0A%7D%0D%0Alimit%20100&format=srj
+
+# SPARQL Query
+http://sparql.uniprot.org/sparql?query=PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX taxon:<http://purl.uniprot.org/taxonomy/> 
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX faldo:<http://biohackathon.org/resource/faldo#> 
+SELECT ?protein ?annotation ?begin ?end  ?comment ?aa_sequence
+#SELECT DISTINCT ?p
+WHERE
+{
+  		#VALUES ?protein { <http://purl.uniprot.org/uniprot/P01218> }
+		?protein a up:Protein ;
+			up:annotation ?annotation .
+  	
+  		?annotation <http://www.w3.org/2000/01/rdf-schema#comment> ?comment .
+  
+		?annotation a up:Glycosylation_Annotation ;
+			up:range/faldo:begin
+				[ faldo:position ?begin ;
+				  faldo:reference ?sequence ] .
+  
+	  ?annotation a up:Glycosylation_Annotation ;
+			up:range/faldo:end
+				[ faldo:position ?end ;
+				  faldo:reference ?sequence ] .
+  
+		?sequence rdf:value ?aa_sequence .
+}
+limit 100
