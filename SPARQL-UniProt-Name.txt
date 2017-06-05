@@ -1,21 +1,102 @@
 PREFIX up:<http://purl.uniprot.org/core/> 
 PREFIX taxon:<http://purl.uniprot.org/taxonomy/> 
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX faldo:<http://biohackathon.org/resource/faldo#> 
-SELECT DISTINCT ?protein ?fullName ?shortName ?organism_scientificName
-# SELECT DISTINCT ?p
+PREFIX faldo:<http://biohackathon.org/resource/faldo#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?protein ?fullName ?shortName ?organism_scientificName ?GeneName
 WHERE
 {
-  		VALUES ?protein { <http://purl.uniprot.org/uniprot/P01218> }
-		?protein a up:Protein ;
-			<http://purl.uniprot.org/core/recommendedName> ?recommendedName ;  
-        <http://purl.uniprot.org/core/alternativeName> ?alternativeName ;
-        <http://purl.uniprot.org/core/organism>  ?organism .
+  VALUES ?protein { <http://purl.uniprot.org/uniprot/P01218> }
+  ?protein a up:Protein ;
+	<http://purl.uniprot.org/core/recommendedName> ?recommendedName ;  
+    <http://purl.uniprot.org/core/alternativeName> ?alternativeName ;
+    <http://purl.uniprot.org/core/organism>  ?organism .
   
   ?recommendedName <http://purl.uniprot.org/core/fullName> ?fullName .
   ?alternativeName <http://purl.uniprot.org/core/shortName> ?shortName .
   ?organism <http://purl.uniprot.org/core/scientificName> ?organism_scientificName .
-  	
+  
+  ?protein up:encodedBy ?encodedBy .
+  ?encodedBy rdf:type up:Gene ;
+             skos:prefLabel ?GeneName .
   
 }
 limit 100
+
+# GET
+http://sparql.uniprot.org/sparql?query=PREFIX+up%3a%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2f%3E+%0d%0aPREFIX+taxon%3a%3Chttp%3a%2f%2fpurl.uniprot.org%2ftaxonomy%2f%3E+%0d%0aPREFIX+rdf%3a%3Chttp%3a%2f%2fwww.w3.org%2f1999%2f02%2f22-rdf-syntax-ns%23%3E+%0d%0aPREFIX+faldo%3a%3Chttp%3a%2f%2fbiohackathon.org%2fresource%2ffaldo%23%3E%0d%0aPREFIX+skos%3a+%3Chttp%3a%2f%2fwww.w3.org%2f2004%2f02%2fskos%2fcore%23%3E%0d%0a%0d%0aSELECT+DISTINCT+%3fprotein+%3ffullName+%3fshortName+%3forganism_scientificName+%3fGeneName%0d%0aWHERE%0d%0a%7b%0d%0a++VALUES+%3fprotein+%7b+%3Chttp%3a%2f%2fpurl.uniprot.org%2funiprot%2fP01218%3E+%7d%0d%0a++%3fprotein+a+up%3aProtein+%3b%0d%0a%09%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2frecommendedName%3E+%3frecommendedName+%3b++%0d%0a++++%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2falternativeName%3E+%3falternativeName+%3b%0d%0a++++%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2forganism%3E++%3forganism+.%0d%0a++%0d%0a++%3frecommendedName+%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2ffullName%3E+%3ffullName+.%0d%0a++%3falternativeName+%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2fshortName%3E+%3fshortName+.%0d%0a++%3forganism+%3Chttp%3a%2f%2fpurl.uniprot.org%2fcore%2fscientificName%3E+%3forganism_scientificName+.%0d%0a++%0d%0a++%3fprotein+up%3aencodedBy+%3fencodedBy+.%0d%0a++%3fencodedBy+rdf%3atype+up%3aGene+%3b%0d%0a+++++++++++++skos%3aprefLabel+%3fGeneName+.%0d%0a++%0d%0a%7d%0d%0alimit+100&format=srj
+
+# OUTPUT JSON
+
+{
+  "head" : {
+    "vars" : [ "protein", "fullName", "shortName", "organism_scientificName", "GeneName" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "GeneName" : {
+        "type" : "literal",
+        "value" : "CGA"
+      },
+      "protein" : {
+        "type" : "uri",
+        "value" : "http://purl.uniprot.org/uniprot/P01218"
+      },
+      "fullName" : {
+        "type" : "literal",
+        "value" : "Glycoprotein hormones alpha chain"
+      },
+      "shortName" : {
+        "type" : "literal",
+        "value" : "TSH-alpha"
+      },
+      "organism_scientificName" : {
+        "type" : "literal",
+        "value" : "Ovis aries"
+      }
+    }, {
+      "GeneName" : {
+        "type" : "literal",
+        "value" : "CGA"
+      },
+      "protein" : {
+        "type" : "uri",
+        "value" : "http://purl.uniprot.org/uniprot/P01218"
+      },
+      "fullName" : {
+        "type" : "literal",
+        "value" : "Glycoprotein hormones alpha chain"
+      },
+      "shortName" : {
+        "type" : "literal",
+        "value" : "FSH-alpha"
+      },
+      "organism_scientificName" : {
+        "type" : "literal",
+        "value" : "Ovis aries"
+      }
+    }, {
+      "GeneName" : {
+        "type" : "literal",
+        "value" : "CGA"
+      },
+      "protein" : {
+        "type" : "uri",
+        "value" : "http://purl.uniprot.org/uniprot/P01218"
+      },
+      "fullName" : {
+        "type" : "literal",
+        "value" : "Glycoprotein hormones alpha chain"
+      },
+      "shortName" : {
+        "type" : "literal",
+        "value" : "LSH-alpha"
+      },
+      "organism_scientificName" : {
+        "type" : "literal",
+        "value" : "Ovis aries"
+      }
+    } ]
+  }
+}
