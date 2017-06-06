@@ -377,7 +377,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	dcterms:identifier	"GA_2" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	rdf:type	glycan:Glycoform .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	ga:order	"4" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	ga:order	"5" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	dcterms:identifier	"GA_2/GF_1" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1>	rdf:type	ga:Glycoform_Information .
@@ -418,7 +418,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	rdf:type	glycan:Glycoform .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	ga:order	"4" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	ga:order	"6" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	dcterms:identifier	"GA_2/GF_2" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1>	rdf:type	ga:Glycoform_Information .
@@ -439,7 +439,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from>	sio:has-value	"7" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from>	sio:has-value	"3" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from>	sio:has-unit	UO:0000193 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from>	rdf:type	ga:ExactRatio .
@@ -459,7 +459,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3>	rdf:type	glycan:Glycoform .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3>	ga:order	"2" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3>	ga:order	"3" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3>	dcterms:identifier	"GA_2/GF_3" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1>	rdf:type	ga:Glycoform_Information .
@@ -533,15 +533,15 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2>	rdf:type	faldo:Region .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/end>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5>	rdf:type	glycan:Glycoform .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5>	ga:order	"3" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5>	ga:order	"4" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5>	dcterms:identifier	"GA_2/GF_5" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1>	rdf:type	ga:Glycoform_Information .
@@ -582,7 +582,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6>	rdf:type	glycan:Glycoform .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6>	ga:order	"5" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6>	ga:order	"6" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6>	dcterms:identifier	"GA_2/GF_6" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1>	rdf:type	ga:Glycoform_Information .
