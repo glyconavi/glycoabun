@@ -133,7 +133,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3>	rdf:type	glycan:Glycoform .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3>	ga:order	"" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3>	ga:order	"max" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1>	rdf:type	ga:Glycoform_Information .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1>	exterms:percentage	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/n.d.> .
@@ -173,7 +173,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4>	rdf:type	glycan:Glycoform .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4>	ga:order	"" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4>	ga:order	"max" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1>	rdf:type	ga:Glycoform_Information .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1>	exterms:percentage	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/n.d.> .
