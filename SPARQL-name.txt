@@ -10,14 +10,14 @@ PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
 PREFIX up: <http://purl.uniprot.org/core/>
 
-SELECT ?gs_id ?rc_id ?abbreviation ?synonym
+SELECT ?gs_id ?rc_id ?abbreviation ?synonym ?bioresource
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 
 # glycosample
 ?gs gs:glycosample_id ?gs_id .
 ?gs glycan:has_resource_entry ?br .
-
+?br rdfs:label ?bioresource .
 # ?br: bioresource
 ?br sio:has-component-part ?rc .
 ?rc ga:id ?rc_id .
