@@ -21,6 +21,7 @@ WHERE {
 # ?br: bioresource
 ?br sio:has-component-part ?rc .
 ?rc ga:id ?rc_id .
+VALUES ?rc_id { "RC_1"}
 
 # abundance
 ?rc ga:has_abundance ?ga .
