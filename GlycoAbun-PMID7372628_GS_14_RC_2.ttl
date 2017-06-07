@@ -191,3 +191,52 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_5/GI_1/5.1/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_5/GI_1/5.1/to>	rdf:type	ga:ExactRatio .
 
+
+
+<http://glyconavi.org/glycobio/BR_2/RC_2>	ga:has_abundance	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1>	dcterms:identifier	"BR_2/RC_2/GA_1" .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6>	rdf:type	glycan:Glycoform .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6>	ga:order	"4" .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6>	dcterms:identifier	"BR_2/RC_2/GA_1/GF_6" .
+
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6>	sio:has-proper-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1>	rdf:type	ga:Glycoform_Information .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1>	exterms:percentage	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_1> .
+
+<http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_1> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3>	rdf:type	glycan:Glycan .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3>	ga:wurcs	"WURCS=2.0/3,7,6/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3/a4-b1_b3-c1_b6-e1_c2-d1_e3-f1_e6-g1" .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3>	foaf:depiction	<https://glytoucan.org/glycans/G47004LA/image?style=extended&format=png&notation=cfg> .
+
+<http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_2> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_2>	rdf:type	sio:submolecular-entity .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_2>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8>	rdf:type	glycan:Glycan .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8>	ga:wurcs	"WURCS=2.0/3,7,6/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3/a4-b1_b3-c1_b6-d1_d3-e1_d6-g1_e2-f1" .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8>	foaf:depiction	<https://glytoucan.org/glycans/G26216ZN/image?style=extended&format=png&notation=cfg> .
+
+<http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_3> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_3>	rdf:type	sio:submolecular-entity .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_3>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90>	rdf:type	glycan:Glycan .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90>	ga:wurcs	"WURCS=2.0/3,7,6/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3/a4-b1_b3-c1_b6-d1_d3-e1_d6-f1_f2-g1" .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90>	foaf:depiction	<https://glytoucan.org/glycans/G84065BX/image?style=extended&format=png&notation=cfg> .
+
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8>	rdfs:comment	"relative abundance" .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8>	rdf:type	ga:RelativeAbundance .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8>	ga:from	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/from> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/from>	sio:has-value	"3.8" .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/from>	sio:has-unit	"UO:0000193" .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/from>	rdf:type	sio:SIO_001018 .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/from>	rdf:type	ga:ExactRatio .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8>	ga:to	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/to> .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/to>	sio:has-value	"3.8" .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/to>	sio:has-unit	UO:0000193 .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/to>	rdf:type	sio:SIO_001018 .
+<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8/to>	rdf:type	ga:ExactRatio .
+
+
