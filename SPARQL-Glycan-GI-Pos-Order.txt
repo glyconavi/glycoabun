@@ -10,7 +10,7 @@ PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
 PREFIX up: <http://purl.uniprot.org/core/>
 
-SELECT ?gs_id ?rc_id  ?pos ?order ?from ?to  
+SELECT ?gi ?gs_id ?rc_id  ?pos ?order ?from ?to  
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 
