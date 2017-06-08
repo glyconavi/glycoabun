@@ -10,7 +10,7 @@ PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
 PREFIX up: <http://purl.uniprot.org/core/>
 
-SELECT distinct ?gf as ?glycoform ?gs_id ?rc_id
+SELECT ?gs_id ?rc_id  ?pos ?order ?from ?to  
 FROM <http://glyconavi.org/database/glycoabun>
 WHERE {
 
@@ -21,11 +21,30 @@ WHERE {
 # ?br: bioresource
 ?br sio:has-component-part ?rc .
 ?rc ga:id ?rc_id .
-VALUES ?rc_id { "RC_2"}
+VALUES ?rc_id { "RC_1"}
 
 # abundance
 ?rc ga:has_abundance ?ga .
 ?ga sio:has-direct-part ?gf .
+?gf sio:has-proper-part ?gi .
+?gf ga:order ?order .
 
+
+#glycosylation site
+OPTIONAL {
+?gf sio:is-covalently-connected-to ?loc .
+?loc faldo:begin ?begin .
+?begin faldo:position ?pos .
 }
-order by ?gf
+
+#?method rdf:type ?method_type .
+# abundance ratio
+OPTIONAL {
+?gi exterms:percentage ?par .
+?par ga:from ?par_from .
+?par_from sio:has-value ?from .
+?par ga:to ?par_to .
+?par_to sio:has-value ?to .
+}
+
+} order by ?pos ?order
