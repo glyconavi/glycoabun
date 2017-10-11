@@ -43,32 +43,41 @@ VALUES ?rc_id { \"".$id."\" }
 ?ga sio:has-direct-part ?gf .
 ?gf sio:has-proper-part ?gi .
 ?gf ga:order ?order .
+
+
 #glycosylation site
+OPTIONAL {
 ?gf sio:is-covalently-connected-to ?loc .
 ?loc faldo:begin ?begin .
 ?begin faldo:position ?pos .
+}
 
 # glycan structure
 ?gi sio:has-part ?gcomp .
 ?gcomp chebi:32854 ?glycan .
 ?glycan ga:wurcs ?wurcs .
 ?glycan foaf:depiction ?glycan_image .
-?glycan foaf:depiction ?glycan_img .
+
+OPTIONAL {
 ?glycan ga:modified ?mod .
 ?mod ga:modified_glycan ?mod_glycan .
 ?mod_glycan ga:wurcs ?mod_wurcs .
 ?mod_glycan foaf:depiction ?mod_glycan_image .
-?mod_glycan foaf:depiction ?mod_glycan_img .
 ?mod ga:method ?method .
+}
 
 #?method rdf:type ?method_type .
 # abundance ratio
+OPTIONAL {
 ?gi exterms:percentage ?par .
 ?par ga:from ?par_from .
 ?par_from sio:has-value ?from .
 ?par ga:to ?par_to .
 ?par_to sio:has-value ?to .
+}
+
 }";
+
 
 // json
 //format=application%2Fsparql-results%2Bjson&timeout=0&debug=on

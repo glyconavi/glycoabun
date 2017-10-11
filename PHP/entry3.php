@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="index.css" />
-<title>GlycoNAVI:GlycoAbun</title>
-</head>
-
+<?php
+include("head.php");
+?>
 
 <body>
-<h1>GlycoNAVI: GlycoAbun</h1>
+<div class="green-bord"><img src="http://www.glyconavi.org/logo/GlycoNAVI.png"><h1>GlycoAbun</h1></div>
 <?php
 //header('Content-Type: text/plain;charset=UTF-8');
 mb_internal_encoding("UTF-8");
@@ -59,7 +54,7 @@ VALUES ?rc_id { \"".$id."\" }
 
 $spqrqldata = "http://rdf.glyconavi.org:8890/sparql?default-graph-uri=&query=".urlencode($sparql_name)."&should-sponge=&format=text%2Fhtml&timeout=0&debug=on";
 $getdata = file_get_contents($spqrqldata);
-echo $getdata;
+echo "<div>".$getdata."</div>";
 
 ?>
 <h2>Protein Information</h2>
@@ -102,12 +97,39 @@ VALUES ?rc_id { \"".$id."\" }
 
 $spqrqldata = "http://rdf.glyconavi.org:8890/sparql?default-graph-uri=&query=".urlencode($sparql_name)."&should-sponge=&format=text%2Fhtml&timeout=0&debug=on";
 $getdata = file_get_contents($spqrqldata);
-echo $getdata;
+echo "<div>".$getdata."</div>";
 
 ?>
+<!--
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    width="1300" height="30" version="1.1">
+    <style type="text/css" media="screen">  
+    svg .red { fill:red; font-weight: bolder; }
+    svg .green { fill:green; }   
+</style>
+<g id="surface0">
+<text x="0" y="30" font-size="15"  text-anchor="start" ><tspan class="green" >MDYYRKYAAAILAILSLFLQILHS</tspan>
+    <tspan>FPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPK</tspan>
+    <tspan class="red">N</tspan>
+    <tspan>ITSEATCCVAKAFTKATVMGNVRVE</tspan>
+    <tspan class="red">N</tspan>
+    <tspan>HTECHCSTCYYHKS</tspan>
+</text>
+</g>
+</svg>
+</div>
+-->
+
+<hr>
 <h2>Glycan Information</h2>
 <?php
 
+$url = "./GlycoABun_glycan_table.php?id=".$id;
+
+printf("<iframe id=\"parent-iframe\" class=\"frame\" src=\"".$url."\"></iframe>");
+
+/*
 $sparql_name = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -169,13 +191,9 @@ VALUES ?rc_id { \"".$id."\" }
 
 $spqrqldata = "http://rdf.glyconavi.org:8890/sparql?default-graph-uri=&query=".urlencode($sparql_name)."&should-sponge=&format=text%2Fhtml&timeout=0&debug=on";
 $getdata = file_get_contents($spqrqldata);
-echo $getdata;
+echo "<div>".$getdata."</div>";
+*/
 
 
-
-
+include("footer.php");
 ?>
-</body>
-
-
-</html>

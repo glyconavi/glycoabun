@@ -48,9 +48,6 @@ VALUES ?rc_id { \"".$id."\" }
 
 }";
 
-// json
-//format=application%2Fsparql-results%2Bjson&timeout=0&debug=on
-
 $spqrqldata = "http://rdf.glyconavi.org:8890/sparql?default-graph-uri=&query=".urlencode($sparql_name)."&should-sponge=&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on";
 $getdata = file_get_contents($spqrqldata);
 echo $getdata;

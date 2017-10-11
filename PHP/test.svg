@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    width="80" height="30" version="1.1">
+    <style type="text/css" media="screen">  
+    svg .red { fill:red; font-weight: bolder; }
+    svg .green { fill:green; }   
+</style>
+<g id="surface0">
+<text x="10" y="30" font-size="30"  text-anchor="middle"  >A</text>
+<text x="30" y="30" font-size="30"  text-anchor="middle" >B</text>
+<text x="50" y="30" font-size="30"  text-anchor="middle" class="red">N</text>
+<text x="70" y="30" font-size="30"  text-anchor="middle" class="green">C</text>
+<text x="90" y="30" font-size="30"  text-anchor="middle" >T</text>
+<text x="110" y="30" font-size="30"  text-anchor="middle" class="red">F</text>
+<text x="130" y="30" font-size="30"  text-anchor="middle" >G</text>
+</g>
+</svg>
