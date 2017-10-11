@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    width="60" height="60" version="1.1">
+    <style type="text/css" media="screen">  
+    svg .shadow { text-shadow: 0px 0px 2px #605951; }   
+</style>
+<g id="surface0">
+ <filter id="theBlur"
+        filterUnits="userSpaceOnUse"
+        x="0" y="0" width="60pt" height="60pt">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+  </filter>
+<circle r="25" cx="30" cy="30" style="fill: GreenYellow" filter="url(#theBlur)" ></circle>
+<circle r="25" cx="30" cy="30" style="fill: GreenYellow" stroke="OliveDrab"></circle>
+<text x="30" y="30" font-size="12"  text-anchor="middle"  class="shadow">現在の</text>
+<text x="30" y="45" font-size="12"  text-anchor="middle"   class="shadow">状態</text>
+</g>
+</svg>
