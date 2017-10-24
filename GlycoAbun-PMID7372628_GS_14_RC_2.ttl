@@ -48,6 +48,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5F39DE6F51C1E2C96773C59721E2D9B3>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5F39DE6F51C1E2C96773C59721E2D9B3>	ga:wurcs	"WURCS=2.0/3,3,2/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3/a4-b1_b3-c1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5F39DE6F51C1E2C96773C59721E2D9B3>	foaf:depiction	<https://glytoucan.org/glycans/G89481IZ/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5F39DE6F51C1E2C96773C59721E2D9B3> dcterms:identifier  "G89481IZ" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_1/GI_1/66.5>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_1/GI_1/66.5>	rdf:type	ga:RelativeAbundance .
@@ -79,6 +80,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/9F88F79FF29E9479807FB0985B581446>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/9F88F79FF29E9479807FB0985B581446>	ga:wurcs	"WURCS=2.0/3,4,3/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3/a4-b1_b3-c1_c2-d1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/9F88F79FF29E9479807FB0985B581446>	foaf:depiction	<https://glytoucan.org/glycans/G58429RC/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/9F88F79FF29E9479807FB0985B581446> dcterms:identifier  "G58429RC" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_2/GI_1/16.4>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_2/GI_1/16.4>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_2/GI_1/16.4>	ga:from	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_2/GI_1/16.4/from> .
@@ -109,6 +111,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/B481BB5D7434E8797A6FD7DB9E24B1A7>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/B481BB5D7434E8797A6FD7DB9E24B1A7>	ga:wurcs	"WURCS=2.0/3,5,4/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3/a4-b1_b3-c1_b6-d1_d3-e1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/B481BB5D7434E8797A6FD7DB9E24B1A7>	foaf:depiction	<https://glytoucan.org/glycans/G23695JT/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/B481BB5D7434E8797A6FD7DB9E24B1A7> dcterms:identifier  "G23695JT" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_3/GI_1/2.1>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_3/GI_1/2.1>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_3/GI_1/2.1>	ga:from	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_3/GI_1/2.1/from> .
@@ -139,6 +142,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/676AFC73EFE52C5CB691AEB216A0E327>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/676AFC73EFE52C5CB691AEB216A0E327>	ga:wurcs	"WURCS=2.0/3,5,4/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3/a4-b1_b3-c1_c2-d1_d2-e1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/676AFC73EFE52C5CB691AEB216A0E327>	foaf:depiction	<https://glytoucan.org/glycans/G27106AM/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/676AFC73EFE52C5CB691AEB216A0E327>  dcterms:identifier  "G27106AM" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_4/GI_1/3.1>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_4/GI_1/3.1>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_4/GI_1/3.1>	ga:from	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_4/GI_1/3.1/from> .
@@ -172,6 +176,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BBAB73E991819769AF1031237D5BEF11>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BBAB73E991819769AF1031237D5BEF11>	ga:wurcs	"WURCS=2.0/3,6,5/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3/a4-b1_b3-c1_b6-d1_d3-e1_d6-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BBAB73E991819769AF1031237D5BEF11>	foaf:depiction	<https://glytoucan.org/glycans/G78230VU/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BBAB73E991819769AF1031237D5BEF11>  dcterms:identifier  "G78230VU" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_5/GI_1/GC_2> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_5/GI_1/GC_2>	rdf:type	sio:submolecular-entity .
@@ -179,6 +184,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/D925EF8D3059D6764A6196EC5584E24B>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/D925EF8D3059D6764A6196EC5584E24B>	ga:wurcs	"WURCS=2.0/3,6,5/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3/a4-b1_b3-c1_b6-e1_c2-d1_e3-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/D925EF8D3059D6764A6196EC5584E24B>	foaf:depiction	<https://glytoucan.org/glycans/G57278MI/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/D925EF8D3059D6764A6196EC5584E24B>  dcterms:identifier  "G57278MI" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_5/GI_1/5.1>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_5/GI_1/5.1>	rdf:type	ga:RelativeAbundance .
@@ -215,6 +221,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3>	ga:wurcs	"WURCS=2.0/3,7,6/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3/a4-b1_b3-c1_b6-e1_c2-d1_e3-f1_e6-g1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3>	foaf:depiction	<https://glytoucan.org/glycans/G47004LA/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/78F4B161688F81DA83965F50097B78B3>  dcterms:identifier  "G47004LA" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_2> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_2>	rdf:type	sio:submolecular-entity .
@@ -222,6 +229,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8>	ga:wurcs	"WURCS=2.0/3,7,6/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3/a4-b1_b3-c1_b6-d1_d3-e1_d6-g1_e2-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8>	foaf:depiction	<https://glytoucan.org/glycans/G26216ZN/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/47E54A1B962C631A4B2C835160B007E8>  dcterms:identifier  "G26216ZN" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_3> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/GC_3>	rdf:type	sio:submolecular-entity .
@@ -229,6 +237,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90>	ga:wurcs	"WURCS=2.0/3,7,6/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3/a4-b1_b3-c1_b6-d1_d3-e1_d6-f1_f2-g1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90>	foaf:depiction	<https://glytoucan.org/glycans/G84065BX/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5C8AB9D4CA911101774FA0A4721E1F90>  dcterms:identifier  "G84065BX" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_6/GI_1/3.8>	rdf:type	ga:RelativeAbundance .
@@ -265,6 +274,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E53732FEF876C3C4C66DA25AE9A4F94C>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E53732FEF876C3C4C66DA25AE9A4F94C>	ga:wurcs	"WURCS=2.0/3,8,7/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3-3/a4-b1_b3-c1_b6-e1_c2-d1_e3-f1_e6-h1_f2-g1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E53732FEF876C3C4C66DA25AE9A4F94C>	foaf:depiction	<https://glytoucan.org/glycans/G37102FC/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E53732FEF876C3C4C66DA25AE9A4F94C>  dcterms:identifier  "G37102FC" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_7/GI_1/GC_2> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_7/GI_1/GC_2>	rdf:type	sio:submolecular-entity .
@@ -272,6 +282,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FF5099FC7B6E5C7F9BB77CB7506AF3CF>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FF5099FC7B6E5C7F9BB77CB7506AF3CF>	ga:wurcs	"WURCS=2.0/3,8,7/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3-3/a4-b1_b3-c1_b6-e1_c2-d1_e3-f1_e6-g1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FF5099FC7B6E5C7F9BB77CB7506AF3CF>	foaf:depiction	<https://glytoucan.org/glycans/G75200TT/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FF5099FC7B6E5C7F9BB77CB7506AF3CF>  dcterms:identifier  "G75200TT" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_7/GI_1/GC_3> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_7/GI_1/GC_3>	rdf:type	sio:submolecular-entity .
@@ -279,6 +290,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/76C03F573BBC32DD367C6E4575B568C0>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/76C03F573BBC32DD367C6E4575B568C0>	ga:wurcs	"WURCS=2.0/3,8,7/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3-3/a4-b1_b3-c1_b6-f1_c2-d1_d2-e1_f3-g1_f6-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/76C03F573BBC32DD367C6E4575B568C0>	foaf:depiction	<https://glytoucan.org/glycans/G00212ZT/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/76C03F573BBC32DD367C6E4575B568C0>  dcterms:identifier  "G00212ZT" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_7/GI_1/1.9>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_7/GI_1/1.9>	rdf:type	ga:RelativeAbundance .
@@ -315,6 +327,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BF14FCA72D0A031CFB8775DBCA2EE365>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BF14FCA72D0A031CFB8775DBCA2EE365>	ga:wurcs	"WURCS=2.0/3,9,8/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3-3-3/a4-b1_b3-c1_b6-f1_c2-d1_d2-e1_f3-g1_f6-h1_h2-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BF14FCA72D0A031CFB8775DBCA2EE365>	foaf:depiction	<https://glytoucan.org/glycans/G46565HP/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/BF14FCA72D0A031CFB8775DBCA2EE365>  dcterms:identifier  "G46565HP" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_8/GI_1/GC_2> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_8/GI_1/GC_2>	rdf:type	sio:submolecular-entity .
@@ -322,6 +335,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CCB1C2F7F25C94DE077934B695BD1E56>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CCB1C2F7F25C94DE077934B695BD1E56>	ga:wurcs	"WURCS=2.0/3,9,8/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3-3-3/a4-b1_b3-c1_b6-e1_c2-d1_e3-f1_e6-h1_f2-g1_h2-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CCB1C2F7F25C94DE077934B695BD1E56>	foaf:depiction	<https://glytoucan.org/glycans/G82648IS/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CCB1C2F7F25C94DE077934B695BD1E56>  dcterms:identifier  "G82648IS" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_8/GI_1/GC_3> .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_8/GI_1/GC_3>	rdf:type	sio:submolecular-entity .
@@ -329,6 +343,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/319AD3F6951A794A7A53757A94ED4E0A>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/319AD3F6951A794A7A53757A94ED4E0A>	ga:wurcs	"WURCS=2.0/3,9,8/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3-3-3/a4-b1_b3-c1_b6-f1_c2-d1_d2-e1_f3-g1_f6-i1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/319AD3F6951A794A7A53757A94ED4E0A>	foaf:depiction	<https://glytoucan.org/glycans/G07105MP/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/319AD3F6951A794A7A53757A94ED4E0A>  dcterms:identifier  "G07105MP" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_8/GI_1/0.7>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_8/GI_1/0.7>	rdf:type	ga:RelativeAbundance .
@@ -363,6 +378,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/96E13F52998501054503FC9565FED5AA>	rdf:type	glycan:Glycan .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/96E13F52998501054503FC9565FED5AA>	ga:wurcs	"WURCS=2.0/3,10,9/[u2122h_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-3-3-3-3-3-3-3/a4-b1_b3-c1_b6-f1_c2-d1_d2-e1_f3-g1_f6-i1_g2-h1_i2-j1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/96E13F52998501054503FC9565FED5AA>	foaf:depiction	<https://glytoucan.org/glycans/G18546YL/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/96E13F52998501054503FC9565FED5AA>  dcterms:identifier  "G18546YL" .
 
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_9/GI_1/0.4>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_2/RC_2/GA_1/GF_9/GI_1/0.4>	rdf:type	ga:RelativeAbundance .
