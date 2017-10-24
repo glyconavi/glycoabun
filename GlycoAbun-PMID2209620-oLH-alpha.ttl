@@ -71,6 +71,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154828/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-5-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	foaf:depiction	<https://glytoucan.org/glycans/G65117HG/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA> dcterms:identifier  "G65117HG" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/16>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/16>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/16>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/16/from> .
@@ -112,6 +113,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155953/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	ga:wurcs	"WURCS=2.0/8,11,10/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7-8/a4-b1_a6-k1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1_i3-j2" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	foaf:depiction	<https://glytoucan.org/glycans/G69113LL/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47> dcterms:identifier  "G69113LL" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/4>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/4>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/4>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/4/from> .
@@ -153,6 +155,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/176983/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	ga:wurcs	"WURCS=2.0/7,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	foaf:depiction	<https://glytoucan.org/glycans/G23247RD/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC> dcterms:identifier  "G23247RD" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/n.d.>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/n.d.>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/n.d.>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/n.d./from> .
@@ -194,6 +197,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/138756/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	foaf:depiction	<https://glytoucan.org/glycans/G72018SI/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32> dcterms:identifier  "G72018SI" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/n.d.>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/n.d.>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/n.d.>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/n.d./from> .
@@ -235,6 +239,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155173/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	ga:wurcs	"WURCS=2.0/6,8,7/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	foaf:depiction	<https://glytoucan.org/glycans/G23647WB/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24> dcterms:identifier  "G23647WB" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/6>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/6>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/6>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/6/from> .
@@ -276,6 +281,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/196858/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-4-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1_g6-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	foaf:depiction	<https://glytoucan.org/glycans/G69749VJ/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63> dcterms:identifier  "G69749VJ" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/23>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/23>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/23>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/23/from> .
@@ -317,6 +323,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154080/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	foaf:depiction	<https://glytoucan.org/glycans/G17344FG/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B> dcterms:identifier  "G17344FG" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/27>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/27>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/27>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/27/from> .
@@ -395,6 +402,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154828/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-5-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	foaf:depiction	<https://glytoucan.org/glycans/G65117HG/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA> dcterms:identifier  "G65117HG" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/7>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/7>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/7>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/7/from> .
@@ -436,6 +444,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155953/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	ga:wurcs	"WURCS=2.0/8,11,10/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7-8/a4-b1_a6-k1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1_i3-j2" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	foaf:depiction	<https://glytoucan.org/glycans/G69113LL/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47> dcterms:identifier  "G69113LL" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from> .
@@ -477,6 +486,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/176983/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	ga:wurcs	"WURCS=2.0/7,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	foaf:depiction	<https://glytoucan.org/glycans/G23247RD/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC> dcterms:identifier  "G23247RD" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/9>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/9>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/9>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/9/from> .
@@ -518,6 +528,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/138756/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	foaf:depiction	<https://glytoucan.org/glycans/G72018SI/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32> dcterms:identifier  "G72018SI" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/9>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/9>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/9>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/9/from> .
@@ -559,6 +570,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155173/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	ga:wurcs	"WURCS=2.0/8,8,7/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	foaf:depiction	<https://glytoucan.org/glycans/G23647WB/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24> dcterms:identifier  "G23647WB" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/8>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/8>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/8>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/8/from> .
@@ -600,6 +612,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/196858/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-4-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1_g6-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	foaf:depiction	<https://glytoucan.org/glycans/G69749VJ/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63> dcterms:identifier  "G69749VJ" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/3>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/3>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/3>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/3/from> .
@@ -641,6 +654,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154080/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	foaf:depiction	<https://glytoucan.org/glycans/G17344FG/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B> dcterms:identifier  "G17344FG" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/35>	rdfs:comment	"relative abundance" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/35>	rdf:type	ga:RelativeAbundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/35>	ga:from	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/35/from> .
