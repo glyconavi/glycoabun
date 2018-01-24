@@ -10,8 +10,8 @@ PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX faldo: <http://biohackathon.org/resource/faldo#>
 PREFIX up: <http://purl.uniprot.org/core/>
 
-SELECT ?gs_id ?rc_id  ?pos ?order ?from ?to  ?wurcs ?glycan_image ?mod_wurcs ?mod_glycan_image
-FROM <http://glyconavi.org/database/glycoabun>
+SELECT ?gs_id ?rc_id  ?pos ?order ?from ?to  ?wurcs ?glycan_image ?mod_wurcs ?mod_glycan_image ?uid ?protein
+FROM <http://glyconavi.org/database/GlycoAbun>
 WHERE {
 
 # glycosample
@@ -20,6 +20,8 @@ WHERE {
 
 # ?br: bioresource
 ?br sio:has-component-part ?rc .
+?rc sio:has-component-part ?protein .
+?protein ga:uniprot_id ?uid .
 ?rc ga:id ?rc_id .
 VALUES ?rc_id { "RC_1"}
 
