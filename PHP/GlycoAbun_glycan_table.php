@@ -150,7 +150,7 @@ else{
         //$ressouce["pos"]["value"];
         //echo '<td><font size="5">'.$ressouce["pos"]["value"].'</font></td>'."\n";
         if ($arr[0]["pos"]["value"]) {
-            echo '<th scope="row"><font size="5">Ans-'.$arr[0]["pos"]["value"].'</font></th>'."\n";
+            echo '<th scope="row"><font size="5">Asn-'.$arr[0]["pos"]["value"].'</font></th>'."\n";
         }
         else {
             echo '<th scope="row"><font size="5">'.$arr[0]["pos"]["value"].'</font></th>'."\n";
