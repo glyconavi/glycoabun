@@ -1,22 +1,25 @@
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-PREFIX owl: <http://www.w3.org/2002/07/owl#> .
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
-PREFIX dc: <http://purl.org/dc/elements/1.1/> .
-PREFIX dcterms: <http://purl.org/dc/terms/> .
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#> .
-PREFIX void: <http://rdfs.org/ns/void#> .
-PREFIX prov: <http://www.w3.org/ns/prov#> .
-PREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#> .
-PREFIX up: <http://purl.uniprot.org/core/> .
-PREFIX faldo: <http://biohackathon.org/resource/faldo#> .
-PREFIX UO: <http://purl.obolibrary.org/obo/> .
-PREFIX gs: <http://glyconavi.org/glycosample/> .
-PREFIX ga: <http://glyconavi.org/glyabun/> .
-PREFIX sio: <http://semanticscience.org/resource/> .
-PREFIX chebi: <http://bio2rdf.org/chebi:> .
-PREFIX exterms: <http://www.example.org/terms/> .
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX faldo: <http://biohackathon.org/resource/faldo#>
+PREFIX UO: <http://purl.obolibrary.org/obo/>
+PREFIX gs: <http://glyconavi.org/glycosample/>
+PREFIX ga: <http://glyconavi.org/glyabun/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX chebi: <http://bio2rdf.org/chebi:>
+PREFIX exterms: <http://www.example.org/terms/>
+
+ga:Dataset	rdf:type <http://semanticscience.org/resource/SIO_000089> .
+ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 
 <http://glyconavi.org/glycobio/GS_3>	gs:glycosample_id	"GS_3" .
 <http://glyconavi.org/glycobio/GS_3>	glycan:has_resource_entry	<http://glyconavi.org/glycobio/BR_1> .
@@ -69,6 +72,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	ga:wurcs	"WURCS=2.0/6,10,9/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-5-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154828/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7> dcterms:identifier  "154828" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-5-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	foaf:depiction	<https://glytoucan.org/glycans/G65117HG/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA> dcterms:identifier  "G65117HG" .
@@ -111,6 +115,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	ga:wurcs	"WURCS=WURCS=2.0/8,11,10/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7-8/a4-b1_a6-k1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1_i3-j2" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155953/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F> dcterms:identifier  "155953" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	ga:wurcs	"WURCS=2.0/8,11,10/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7-8/a4-b1_a6-k1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1_i3-j2" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	foaf:depiction	<https://glytoucan.org/glycans/G69113LL/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47> dcterms:identifier  "G69113LL" .
@@ -153,6 +158,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	ga:wurcs	"WURCS=2.0/7,10,9/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/176983/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A> dcterms:identifier  "176983" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	ga:wurcs	"WURCS=2.0/7,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	foaf:depiction	<https://glytoucan.org/glycans/G23247RD/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC> dcterms:identifier  "G23247RD" .
@@ -195,6 +201,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	ga:wurcs	"WURCS=2.0/6,9,8/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/138756/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110> dcterms:identifier  "138756" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	foaf:depiction	<https://glytoucan.org/glycans/G72018SI/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32> dcterms:identifier  "G72018SI" .
@@ -237,6 +244,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	ga:wurcs	"WURCS=2.0/6,8,7/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155173/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722> dcterms:identifier  "155173" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	ga:wurcs	"WURCS=2.0/6,8,7/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	foaf:depiction	<https://glytoucan.org/glycans/G23647WB/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24> dcterms:identifier  "G23647WB" .
@@ -279,6 +287,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	ga:wurcs	"WURCS=2.0/6,10,9/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-4-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1_g6-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/196858/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	dcterms:identifier  "196858" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-4-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1_g6-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	foaf:depiction	<https://glytoucan.org/glycans/G69749VJ/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63> dcterms:identifier  "G69749VJ" .
@@ -321,6 +330,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	ga:wurcs	"WURCS=2.0/6,9,8/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154080/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D> dcterms:identifier  "154080" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	foaf:depiction	<https://glytoucan.org/glycans/G17344FG/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B> dcterms:identifier  "G17344FG" .
@@ -400,6 +410,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	ga:wurcs	"WURCS=2.0/6,10,9/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-5-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154828/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7> dcterms:identifier  "154828" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-5-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	foaf:depiction	<https://glytoucan.org/glycans/G65117HG/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA> dcterms:identifier  "G65117HG" .
@@ -442,6 +453,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	ga:wurcs	"WURCS=WURCS=2.0/8,11,10/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7-8/a4-b1_a6-k1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1_i3-j2" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155953/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F> dcterms:identifier  "155953" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	ga:wurcs	"WURCS=2.0/8,11,10/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7-8/a4-b1_a6-k1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1_i3-j2" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	foaf:depiction	<https://glytoucan.org/glycans/G69113LL/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47> dcterms:identifier  "G69113LL" .
@@ -484,6 +496,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	ga:wurcs	"WURCS=2.0/7,10,9/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/176983/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A> dcterms:identifier  "176983" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	ga:wurcs	"WURCS=2.0/7,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a2112h-1b_1-5][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6-7/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1_h4-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	foaf:depiction	<https://glytoucan.org/glycans/G23247RD/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC> dcterms:identifier  "G23247RD" .
@@ -526,6 +539,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	ga:wurcs	"WURCS=2.0/6,9,8/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/138756/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	dcterms:identifier  "138756" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-2-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g2-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	foaf:depiction	<https://glytoucan.org/glycans/G72018SI/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32> dcterms:identifier  "G72018SI" .
@@ -568,6 +582,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	ga:wurcs	"WURCS=2.0/8,8,7/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155173/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722> dcterms:identifier  "155173" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	ga:wurcs	"WURCS=2.0/8,8,7/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	foaf:depiction	<https://glytoucan.org/glycans/G23647WB/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24> dcterms:identifier  "G23647WB" .
@@ -610,6 +625,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	ga:wurcs	"WURCS=2.0/6,10,9/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-4-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1_g6-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/196858/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B> dcterms:identifier  "196858" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	ga:wurcs	"WURCS=2.0/6,10,9/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-4-6/a4-b1_a6-j1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1_g6-i1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	foaf:depiction	<https://glytoucan.org/glycans/G69749VJ/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63> dcterms:identifier  "G69749VJ" .
@@ -652,6 +668,7 @@ PREFIX exterms: <http://www.example.org/terms/> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	ga:wurcs	"WURCS=2.0/6,9,8/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/154080/SVG> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	dcterms:identifier  "154080" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	ga:wurcs	"WURCS=2.0/6,9,8/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-4-6/a4-b1_a6-i1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1_g3-h1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	foaf:depiction	<https://glytoucan.org/glycans/G17344FG/image?style=extended&format=png&notation=cfg> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B> dcterms:identifier  "G17344FG" .
