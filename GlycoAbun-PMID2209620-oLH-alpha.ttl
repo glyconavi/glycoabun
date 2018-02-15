@@ -52,6 +52,8 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	glycan:has_attached_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	.
 <http://glyconavi.org/glycobio/BR_1/RC_1>	glycan:has_attached_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	.
 # glycan:is_glycosylated_on
+<http://glyconavi.org/glycobio/BR_1/RC_1>	glycan:is_glycosylated_on	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
+<http://glyconavi.org/glycobio/BR_1/RC_1>	glycan:is_glycosylated_on	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 
 
 
@@ -64,7 +66,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/P1>	dcterms:identifier	"P01218" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/P1>	ga:uniprot_id	"P01218" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/P1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/P1>	chebi:32854	<http://purl.uniprot.org/uniprot/P01218> .
+<http://purl.uniprot.org/uniprot/P01218>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/P1> .
 <http://purl.uniprot.org/uniprot/P01218>	rdf:type	up:Protein .
 <http://purl.uniprot.org/uniprot/P01218>	dcterms:identifier	"P01218" .
 # Glyconnect
@@ -89,7 +91,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA> .
@@ -114,13 +116,17 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/16/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1/GI_1/16/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
+# Glyconnect
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos> .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos>	rdf:type	faldo:ExactPosition .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos>	faldo:position	"56" .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2>	rdf:type	glycan:Glycoform .
@@ -132,7 +138,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47> .
@@ -157,7 +163,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/4/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2/GI_1/4/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
@@ -175,7 +181,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC> .
@@ -200,7 +206,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/n.d./to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3/GI_1/n.d./to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
@@ -218,7 +224,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32> .
@@ -243,7 +249,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/n.d./to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4/GI_1/n.d./to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
@@ -261,7 +267,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24> .
@@ -286,7 +292,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/6/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5/GI_1/6/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
@@ -304,7 +310,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63> .
@@ -329,7 +335,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/23/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6/GI_1/23/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
@@ -347,7 +353,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B> .
@@ -372,7 +378,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/27/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7/GI_1/27/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
@@ -390,7 +396,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/GC_1>	chebi:32854	<http://glyconavi.org/glycan/neutral-glycan> .
+<http://glyconavi.org/glycan/neutral-glycan>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/GC_1> .
 <http://glyconavi.org/glycan/neutral-glycan>	rdf:type	glycan:Saccharide .
 <http://glyconavi.org/glycan/neutral-glycan>	rdfs:label	"neutral glycans" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/13>	rdfs:comment	"relative abundance" .
@@ -406,7 +412,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/13/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8/GI_1/13/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
@@ -427,7 +433,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/FA5288315F251F388DB4BBE46B565DC7/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA> .
@@ -452,13 +458,20 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/7/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1/GI_1/7/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
+
+# Glyconnect
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos> .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos>	rdf:type	faldo:ExactPosition .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos>	faldo:position	"82" .
+
+
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	rdf:type	glycan:Glycoform .
@@ -470,7 +483,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/80FBDDB00FC0CD2D86ACAAFB6D8ED00F/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47> .
@@ -495,7 +508,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
@@ -513,7 +526,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/583AC95DAF8ED266AD7AEFDFE68AC66A/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC> .
@@ -538,7 +551,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/9/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3/GI_1/9/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
@@ -556,7 +569,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/E65D1F062F126B19E121D7141DA2A110/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32> .
@@ -581,7 +594,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/9/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4/GI_1/9/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
@@ -599,7 +612,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24> .
@@ -624,7 +637,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/8/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5/GI_1/8/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
@@ -642,7 +655,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/486C9870363444210052897546CF587B/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63> .
@@ -667,7 +680,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/3/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6/GI_1/3/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
@@ -685,7 +698,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/GC_1>	chebi:32854	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/GC_1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D/mod1> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/5A946B65EB97332DDB2BADFDFC95022D/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B> .
@@ -710,7 +723,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/35/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7/GI_1/35/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
@@ -728,7 +741,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1>	sio:has-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/GC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/GC_1>	rdf:type	sio:submolecular-entity .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/GC_1>	chebi:32854	<http://glyconavi.org/glycan/neutral-glycan> .
+<http://glyconavi.org/glycan/neutral-glycan>	chebi:32854	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/GC_1> .
 <http://glyconavi.org/glycan/neutral-glycan>	rdf:type	glycan:Saccharide .
 <http://glyconavi.org/glycan/neutral-glycan>	rdfs:label	"neutral glycans" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/16>	rdfs:comment	"relative abundance" .
@@ -744,7 +757,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/16/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8/GI_1/16/to>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
