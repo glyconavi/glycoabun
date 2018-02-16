@@ -26,7 +26,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/GS_3>	glycan:has_resource_entry	<http://glyconavi.org/glycobio/BR_1> .
 <http://glyconavi.org/glycobio/BR_1>	rdfs:label	"oLH protein_complex" .
 <http://glyconavi.org/glycobio/BR_1>	rdf:type	ga:BioResource .
+<http://glyconavi.org/glycobio/BR_1>	rdf:type	sio:SIO_010497 . # protein complex
 <http://glyconavi.org/glycobio/BR_1>	glycan:has_resource_entry	<http://glyconavi.org/glycobio/BR_1E1> .
+<http://glyconavi.org/glycobio/BR_1E1>	rdf:type	glycan:resource_entry .
+<http://glyconavi.org/glycobio/BR_1E1>	dcterms:identifier	"BR_1E1" .
 <http://glyconavi.org/glycobio/BR_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	dcterms:identifier	"RC_1" .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	ga:id	"RC_1" .
@@ -76,11 +79,16 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 # Glyconnect
 <http://purl.uniprot.org/uniprot/P01218>	rdfs:seeAlso	<http://purl.uniprot.org/uniprot/P01218> .
 
-<http://glyconavi.org/glycobio/BR_1/RC_1/P1>	ga:has_n-linked_site	"56" .
-<http://glyconavi.org/glycobio/BR_1/RC_1/P1>	ga:has_n-linked_site	"82" .
+# Glyconnect
+<http://purl.uniprot.org/uniprot/P01218>	faldo:location	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
+<http://purl.uniprot.org/uniprot/P01218>	faldo:location	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
+
+<http://glyconavi.org/glycobio/BR_1/RC_1/P1>	ga:has_n-linked_site	"80" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/P1>	ga:has_n-linked_site	"106" .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1>	ga:has_abundance	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	dcterms:identifier	"GA_1" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	rdf:type	ga:Abundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1>	rdf:type	glycan:Glycoform .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1>	ga:order	"3" .
@@ -118,15 +126,24 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_1>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 # Glyconnect
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos>	rdf:type	faldo:ExactPosition .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos>	faldo:position	"56"^^xsd:int .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-uniprot> .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-uniprot>	rdf:type	faldo:ExactPosition .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-uniprot>	faldo:position	"80"^^xsd:int .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-uniprot>	rdfs:label	"uniprot position is 80" .
+
+# author position
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-author> .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-author>	rdf:type	ga:AuthorPosition .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-author>	faldo:position	"56"^^xsd:int .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/pos-author>	rdfs:label	"author position is 56" .
+
+
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2>	rdf:type	glycan:Glycoform .
@@ -165,10 +182,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_2>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3> .
@@ -208,10 +225,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_3>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4> .
@@ -251,10 +268,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_4>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5> .
@@ -294,10 +311,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_5>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6> .
@@ -337,10 +354,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_6>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7> .
@@ -380,10 +397,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_7>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8> .
@@ -414,15 +431,16 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/GF_8>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"56" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	faldo:position	"80" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1/end>	rdf:type	faldo:ExactPosition .
 
 
 <http://glyconavi.org/glycobio/BR_1/RC_1>	ga:has_abundance	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	dcterms:identifier	"GA_2" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	rdf:type	ga:Abundance .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	rdf:type	glycan:Glycoform .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	ga:order	"5" .
@@ -460,16 +478,22 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_1>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 # Glyconnect
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos>	rdf:type	faldo:ExactPosition .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos>	faldo:position	"82"^^xsd:int .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-uniprot> .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-uniprot>	rdf:type	faldo:ExactPosition .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-uniprot>	faldo:position	"106"^^xsd:int .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-uniprot>	rdfs:label	"uniprot position is 106" .
+# author position
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:location <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-author> .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-author>	rdf:type	ga:AuthorPosition .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-author>	faldo:position	"82"^^xsd:int .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/pos-author>	rdfs:label	"author position is 82" .
 
 
 
@@ -510,10 +534,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3> .
@@ -553,10 +577,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_3>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4> .
@@ -596,10 +620,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_4>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5> .
@@ -639,10 +663,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_5>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6> .
@@ -682,10 +706,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_6>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7> .
@@ -725,10 +749,10 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_7>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
 
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2>	sio:has-direct-part	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8> .
@@ -759,8 +783,8 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_8>	sio:is-covalently-connected-to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:begin	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/begin>	rdf:type	faldo:ExactPosition .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	faldo:end	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"82" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	faldo:position	"106" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2/end>	rdf:type	faldo:ExactPosition .
