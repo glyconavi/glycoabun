@@ -14,29 +14,48 @@ PREFIX faldo: <http://biohackathon.org/resource/faldo#>
 PREFIX UO: <http://purl.obolibrary.org/obo/>
 PREFIX gs: <http://glyconavi.org/glycosample/>
 PREFIX ga: <http://glyconavi.org/glyabun/>
+PREFIX gb: <http://glyconavi.org/glycobio/>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX chebi: <http://bio2rdf.org/chebi:>
 PREFIX exterms: <http://www.example.org/terms/>
+PREFIX pav:   <http://purl.org/pav/>
+PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 
 ga:Dataset	rdf:type <http://semanticscience.org/resource/SIO_000089> .
 ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 
+<http://glyconavi.org/database/glycoabun>
+        a                           void:Dataset ;
+        dcterms:description        "Glycan abundance ratio -version 2018-02-21" ;
+        dcterms:license             <http://creativecommons.org/licenses/by/2.1/> ;
+        dcterms:publisher           <http://glyconavi.org> ;
+        dcterms:title              "GlycoAbun RDF" ;
+        pav:contributedBy           <http://jglobal.jst.go.jp/detail.php?JGLOBAL_ID=200901097596928716> ;
+        pav:version                "0.1b";
+        dcterms:hasVersion         <http://glyconavi.org/GlycoAbun/0.1b> ;
+        dcat:landingPage            <https://bio.glyconavi.org/GlycoAbun> .
+
+
+
 <http://glyconavi.org/glycobio/GS_3>	gs:glycosample_id	"GS_3" .
+<http://glyconavi.org/glycobio/GS_3>	dcterms:identifier	"GS_3" .
 <http://glyconavi.org/glycobio/GS_3>	rdf:type	gs:Glycosample .
 <http://glyconavi.org/glycobio/GS_3>	glycan:has_resource_entry	<http://glyconavi.org/glycobio/BR_1> .
 <http://glyconavi.org/glycobio/BR_1>	rdfs:label	"oLH protein_complex" .
 <http://glyconavi.org/glycobio/BR_1>	rdf:type	ga:BioResource .
 <http://glyconavi.org/glycobio/BR_1>	rdf:type	sio:SIO_010497 . # protein complex
 <http://glyconavi.org/glycobio/BR_1>	glycan:has_resource_entry	<http://glyconavi.org/glycobio/BR_1E1> .
+<http://glyconavi.org/glycobio/BR_1>	gb:brid	"BR_1" .
+<http://glyconavi.org/glycobio/BR_1>	dcterms:identifier	"BR_1" .
 <http://glyconavi.org/glycobio/BR_1E1>	rdf:type	glycan:resource_entry .
 <http://glyconavi.org/glycobio/BR_1E1>	dcterms:identifier	"BR_1E1" .
 <http://glyconavi.org/glycobio/BR_1>	sio:has-component-part	<http://glyconavi.org/glycobio/BR_1/RC_1> .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	dcterms:identifier	"RC_1" .
-<http://glyconavi.org/glycobio/BR_1/RC_1>	ga:id	"RC_1" .
+<http://glyconavi.org/glycobio/BR_1/RC_1>	gb:rcid	"RC_1" .
 <http://glyconavi.org/glycobio/BR_1/RC_1>   rdf:type	ga:ResourceComponent .
-<http://glyconavi.org/glycobio/BR_1/RC_1>	dcterms:refrence	<http://identifiers.org/pmid/2209620> .
-<http://identifiers.org/pmid/2209620>	rdfs:seeAlso	<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620> .
-<http://identifiers.org/pmid/2209620>	dcterms:identifier	"2209620" .
+<http://glyconavi.org/glycobio/BR_1/RC_1>	dcterms:refrence	<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620> .
+<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	rdfs:seeAlso	<http://identifiers.org/pmid/2209620> .
+<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	dcterms:identifier	"2209620" .
 <http://glyconavi.org/glycobio/BR_1/RC_1>	sio:hasSynonym	<http://glyconavi.org/glycobio/BR_1/RC_1/Synonym> .
 <http://glyconavi.org/glycobio/BR_1/RC_1/Synonym>	sio:has-value	"黄体形成ホルモン alpha chain" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/Synonym>	sio:has-value	"ovine lutropin alpha chain" .
