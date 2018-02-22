@@ -116,7 +116,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 # Glyconnect
 <http://purl.uniprot.org/uniprot/P01218>	foaf:primaryTopic 	<http://identifiers.org/uniprot/P01218> .
 # Glyconnect
-<http://purl.uniprot.org/uniprot/P01218>	rdfs:seeAlso	<http://purl.uniprot.org/uniprot/P01218> .
+<http://purl.uniprot.org/uniprot/P01218>	rdfs:seeAlso	<http://identifiers.org/uniprot/P01218> .
 
 # Glyconnect
 <http://purl.uniprot.org/uniprot/P01218>	faldo:location	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_1/Loc1> .
