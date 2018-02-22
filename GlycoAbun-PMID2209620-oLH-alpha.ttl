@@ -107,7 +107,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	rdf:type	glycan:Saccharide	.
 
 # Glycan Author Label
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	rdfs:Label	"S2"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	rdfs:label	"S2"	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	rdfs:label	"SN"	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	rdfs:label	"S1-6"	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	rdfs:label	"S1-5"	.
