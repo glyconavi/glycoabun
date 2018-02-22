@@ -97,6 +97,23 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	glycan:glycosylates	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/Loc2>	.
 
 
+# GlycoRDF glycan:Saccharide
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	rdf:type	glycan:Saccharide	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	rdf:type	glycan:Saccharide	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	rdf:type	glycan:Saccharide	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	rdf:type	glycan:Saccharide	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	rdf:type	glycan:Saccharide	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	rdf:type	glycan:Saccharide	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	rdf:type	glycan:Saccharide	.
+
+# Glycan Author Label
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/C8286B5BB3EFBBA8291941FBC17D36AA>	rdfs:Label	"S2"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	rdfs:label	"SN"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	rdfs:label	"S1-6"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	rdfs:label	"S1-5"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	rdfs:label	"S1-4"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	rdfs:label	"S1-AB"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	rdfs:label	"S1-A"	.
 
 
 
@@ -566,7 +583,7 @@ ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/from>	rdf:type	ga:ExactRatio .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7>	ga:to	<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to> .
-<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to>	sio:has-value	"7" .
+<http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to>	sio:has-value	"3" .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to>	sio:has-unit	UO:0000193 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to>	rdf:type	sio:SIO_001018 .
 <http://glyconavi.org/glycobio/BR_1/RC_1/GA_2/GF_2/GI_1/7/to>	rdf:type	ga:ExactRatio .
