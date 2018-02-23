@@ -184,7 +184,7 @@ gb:BR1RC1GA1GF1GI1_16_to	sio:has-value	"16" .
 gb:BR1RC1GA1GF1GI1_16_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF1GI1_16_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF1GI1_16_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF1	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF1	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -242,7 +242,7 @@ gb:BR1RC1GA1GF2GI1_4_to	sio:has-value	"4" .
 gb:BR1RC1GA1GF2GI1_4_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF2GI1_4_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF2GI1_4_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF2	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF2	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -287,7 +287,7 @@ gb:BR1RC1GA1GF3GI1_nd_to	sio:has-value	"nd" .
 gb:BR1RC1GA1GF3GI1_nd_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF3GI1_nd_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF3GI1_nd_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF3	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF3	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -332,7 +332,7 @@ gb:BR1RC1GA1GF4GI1_nd_to	sio:has-value	"nd" .
 gb:BR1RC1GA1GF4GI1_nd_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF4GI1_nd_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF4GI1_nd_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF4	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF4	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -377,7 +377,7 @@ gb:BR1RC1GA1GF5GI1_6_to	sio:has-value	"6" .
 gb:BR1RC1GA1GF5GI1_6_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF5GI1_6_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF5GI1_6_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF5	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF5	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -422,7 +422,7 @@ gb:BR1RC1GA1GF6GI1_23_to	sio:has-value	"23" .
 gb:BR1RC1GA1GF6GI1_23_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF6GI1_23_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF6GI1_23_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF6	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF6	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -467,7 +467,7 @@ gb:BR1RC1GA1GF7GI1_27_to	sio:has-value	"27" .
 gb:BR1RC1GA1GF7GI1_27_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF7GI1_27_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF7GI1_27_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF7	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF7	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -501,7 +501,7 @@ gb:BR1RC1GA1GF8GI1_13_to	sio:has-value	"13" .
 gb:BR1RC1GA1GF8GI1_13_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA1GF8GI1_13_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA1GF8GI1_13_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA1GF8	sio:is-covalently-connected_to	gb:BR1RC1GA1Loc1 .
+gb:BR1RC1GA1GF8	sio:is-covalently-connected-to	gb:BR1RC1GA1Loc1 .
 gb:BR1RC1GA1Loc1	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA1Loc1	faldo:begin	gb:BR1RC1GA1Loc1-begin .
 gb:BR1RC1GA1Loc1-begin	faldo:position	"80" .
@@ -550,7 +550,7 @@ gb:BR1RC1GA2GF1GI1_7_to	sio:has-value	"7" .
 gb:BR1RC1GA2GF1GI1_7_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF1GI1_7_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF1GI1_7_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF1	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF1	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
@@ -608,7 +608,7 @@ gb:BR1RC1GA2GF2GI1_7_to	sio:has-value	"3" .
 gb:BR1RC1GA2GF2GI1_7_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF2GI1_7_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF2GI1_7_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF2	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF2	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
@@ -653,7 +653,7 @@ gb:BR1RC1GA2GF3GI1_9_to	sio:has-value	"9" .
 gb:BR1RC1GA2GF3GI1_9_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF3GI1_9_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF3GI1_9_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF3	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF3	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
@@ -698,7 +698,7 @@ gb:BR1RC1GA2GF4GI1_9_to	sio:has-value	"9" .
 gb:BR1RC1GA2GF4GI1_9_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF4GI1_9_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF4GI1_9_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF4	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF4	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
@@ -743,7 +743,7 @@ gb:BR1RC1GA2GF5GI1_8_to	sio:has-value	"8" .
 gb:BR1RC1GA2GF5GI1_8_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF5GI1_8_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF5GI1_8_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF5	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF5	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
@@ -788,7 +788,7 @@ gb:BR1RC1GA2GF6GI1_3_to	sio:has-value	"3" .
 gb:BR1RC1GA2GF6GI1_3_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF6GI1_3_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF6GI1_3_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF6	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF6	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
@@ -833,7 +833,7 @@ gb:BR1RC1GA2GF7GI1_35_to	sio:has-value	"35" .
 gb:BR1RC1GA2GF7GI1_35_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF7GI1_35_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF7GI1_35_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF7	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF7	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
@@ -867,7 +867,7 @@ gb:BR1RC1GA2GF8GI1_16_to	sio:has-value	"16" .
 gb:BR1RC1GA2GF8GI1_16_to	sio:has-unit	UO:0000193 .
 gb:BR1RC1GA2GF8GI1_16_to	rdf:type	sio:SIO_001018 .
 gb:BR1RC1GA2GF8GI1_16_to	rdf:type	ga:ExactRatio .
-gb:BR1RC1GA2GF8	sio:is-covalently-connected_to	gb:BR1RC1GA2Loc2 .
+gb:BR1RC1GA2GF8	sio:is-covalently-connected-to	gb:BR1RC1GA2Loc2 .
 gb:BR1RC1GA2Loc2	rdf:type	faldo:Region ; rdf:type glycan:Glycosylation_site .
 gb:BR1RC1GA2Loc2	faldo:begin	gb:BR1RC1GA2Loc2-begin .
 gb:BR1RC1GA2Loc2-begin	faldo:position	"106" .
