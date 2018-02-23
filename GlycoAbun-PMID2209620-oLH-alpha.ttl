@@ -94,7 +94,7 @@ gb:BR1RC1	glycan:is_glycosylated_on	gb:BR1RC1GA2Loc2 .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	glycan:glycosylates	gb:BR1RC1GA2Loc2	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	glycan:glycosylates	gb:BR1RC1GA2Loc2	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	glycan:glycosylates	gb:BR1RC1GA2Loc2	.
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	glycan:glycosylates	gb:BR1RC1GA2Loc2	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	glycan:glycosylates	gb:BR1RC1GA2Loc2	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	glycan:glycosylates	gb:BR1RC1GA2Loc2	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	glycan:glycosylates	gb:BR1RC1GA2Loc2	.
 
@@ -104,7 +104,7 @@ gb:BR1RC1	glycan:is_glycosylated_on	gb:BR1RC1GA2Loc2 .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	rdf:type	glycan:Saccharide	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	rdf:type	glycan:Saccharide	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	rdf:type	glycan:Saccharide	.
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	rdf:type	glycan:Saccharide	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	rdf:type	glycan:Saccharide	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	rdf:type	glycan:Saccharide	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	rdf:type	glycan:Saccharide	.
 
@@ -114,7 +114,7 @@ gb:BR1RC1	glycan:is_glycosylated_on	gb:BR1RC1GA2Loc2 .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/CA5109DF8318A5E0E36B0333D1DF3E47>	rdfs:label	"SN"	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/4386E107A960643EA112F946D1B9E8CC>	rdfs:label	"S1-6"	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/DA106DE6F3AF6E9DD565299D0E876C32>	rdfs:label	"S1-5"	.
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	rdfs:label	"S1-4"	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	rdfs:label	"S1-4"	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/0AB19679850582854A6E8E44A7107F63>	rdfs:label	"S1-AB"	.
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/84F1FAABA987EF1A007F60FBC66D873B>	rdfs:label	"S1-A"	.
 
@@ -720,17 +720,17 @@ gb:BR1RC1GA2GF5GI1_GC1	rdf:type	sio:submolecular-entity .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	chebi:32854	gb:BR1RC1GA2GF5GI1_GC1 .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	rdf:type	glycan:Saccharide .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	ga:modified	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1> .
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1>	ga:modified_glycan	<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722/mod1>	ga:method	ga:Reduction .
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	rdf:type	ga:Alditol .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	rdf:type	ga:Alditol .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	ga:wurcs	"WURCS=2.0/8,8,7/[a2122h-1x_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722>	foaf:depiction	<https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/image/biologic/155173/SVG> .
 <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/410192195006BFD03EF2138F91944722> dcterms:identifier  "155173" .
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	ga:wurcs	"WURCS=2.0/8,8,7/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	foaf:depiction	<https://glytoucan.org/glycans/G23647WB/image?style=extended&format=png&notation=cfg> .
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24>	rdfs:seeAlso	<http://identifiers.org/glytoucan/G23647WB>	.
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	ga:wurcs	"WURCS=2.0/8,8,7/[h2122h_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5][a2112h-1b_1-5_2*NCC/3=O_4*OSO/3=O/3=O][a1221m-1a_1-5]/1-2-3-4-2-5-4-6/a4-b1_a6-h1_b4-c1_c3-d1_c6-g1_d2-e1_e4-f1" .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	foaf:depiction	<https://glytoucan.org/glycans/G23647WB/image?style=extended&format=png&notation=cfg> .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24>	rdfs:seeAlso	<http://identifiers.org/glytoucan/G23647WB>	.
 
-<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/8340B1EFCCE02402C111EFC49A6DDE24> dcterms:identifier  "G23647WB" .
+<http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/6340B1EFCCE02402C111EFC49A6DDE24> dcterms:identifier  "G23647WB" .
 gb:BR1RC1GA2GF5GI1_8	rdfs:comment	"relative abundance" .
 gb:BR1RC1GA2GF5GI1_8	rdf:type	ga:RelativeAbundance .
 gb:BR1RC1GA2GF5GI1_8	ga:from	gb:BR1RC1GA2GF5GI1_8_from .
