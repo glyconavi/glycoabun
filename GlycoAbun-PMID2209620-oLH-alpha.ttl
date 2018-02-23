@@ -50,8 +50,8 @@ gb:BR1	dcterms:identifier	"BR1" .
 gb:BR1E1	rdf:type	glycan:resource_entry .
 gb:BR1E1	dcterms:identifier	"BR1E1" .
 gb:BR1	sio:has-component-part	gb:BR1RC1 .
-gb:BR1RC1	dcterms:identifier	"RC1" .
-gb:BR1RC1	gb:rcid	"RC1" .
+gb:BR1RC1	dcterms:identifier	"BR1RC1" .
+gb:BR1RC1	gb:rcid	"BR1RC1" .
 gb:BR1RC1   rdf:type	ga:ResourceComponent .
 gb:BR1RC1	dcterms:refrence	<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620> .
 <http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	rdfs:seeAlso	<http://identifiers.org/pmid/2209620> .
@@ -146,12 +146,12 @@ gb:BR1RC1P1	ga:has_n-linked_site	"80" .
 gb:BR1RC1P1	ga:has_n-linked_site	"106" .
 
 gb:BR1RC1	ga:has_abundance	gb:BR1RC1GA1 .
-gb:BR1RC1GA1	dcterms:identifier	"GA1" .
+gb:BR1RC1GA1	dcterms:identifier	"BR1RC1GA1" .
 gb:BR1RC1GA1	rdf:type	ga:Abundance .
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF1 .
 gb:BR1RC1GA1GF1	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF1	ga:order	"3" .
-gb:BR1RC1GA1GF1	dcterms:identifier	"GA1GF1" .
+gb:BR1RC1GA1GF1	dcterms:identifier	"BR1RC1GA1GF1" .
 gb:BR1RC1GA1GF1	sio:has-proper-part	gb:BR1RC1GA1GF1GI1 .
 gb:BR1RC1GA1GF1GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA1GF1GI1	exterms:percentage	gb:BR1RC1GA1GF1GI1_16 .
@@ -209,7 +209,7 @@ gb:BR1RC1GA1Loc1	faldo:location <http://glyconavi.org/glycobio/BR1RC1GA1Loc1/pos
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF2 .
 gb:BR1RC1GA1GF2	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF2	ga:order	"6" .
-gb:BR1RC1GA1GF2	dcterms:identifier	"GA1GF2" .
+gb:BR1RC1GA1GF2	dcterms:identifier	"BR1RC1GA1GF2" .
 gb:BR1RC1GA1GF2	sio:has-proper-part	gb:BR1RC1GA1GF2GI1 .
 gb:BR1RC1GA1GF2GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA1GF2GI1	exterms:percentage	gb:BR1RC1GA1GF2GI1_4 .
@@ -254,7 +254,7 @@ gb:BR1RC1GA1Loc1	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA1Loc1/end> .
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF3 .
 gb:BR1RC1GA1GF3	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF3	ga:order	"max" .
-gb:BR1RC1GA1GF3	dcterms:identifier	"GA1GF3" .
+gb:BR1RC1GA1GF3	dcterms:identifier	"BR1RC1GA1GF3" .
 gb:BR1RC1GA1GF3	sio:has-proper-part	<http://glyconavi.org/glycobio/BR1RC1GA1GF3GI1> .
 <http://glyconavi.org/glycobio/BR1RC1GA1GF3GI1>	rdf:type	ga:Glycoform_Information .
 <http://glyconavi.org/glycobio/BR1RC1GA1GF3GI1>	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA1GF3GI1_n.d.> .
@@ -299,7 +299,7 @@ gb:BR1RC1GA1Loc1	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA1Loc1/end> .
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF4 .
 gb:BR1RC1GA1GF4	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF4	ga:order	"max" .
-gb:BR1RC1GA1GF4	dcterms:identifier	"GA1GF4" .
+gb:BR1RC1GA1GF4	dcterms:identifier	"BR1RC1GA1GF4" .
 gb:BR1RC1GA1GF4	sio:has-proper-part	gb:BR1RC1GA1GF4GI1 .
 gb:BR1RC1GA1GF4GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA1GF4GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA1GF4GI1_n.d.> .
@@ -344,7 +344,7 @@ gb:BR1RC1GA1Loc1	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA1Loc1/end> .
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF5 .
 gb:BR1RC1GA1GF5	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF5	ga:order	"5" .
-gb:BR1RC1GA1GF5	dcterms:identifier	"GA1GF5" .
+gb:BR1RC1GA1GF5	dcterms:identifier	"BR1RC1GA1GF5" .
 gb:BR1RC1GA1GF5	sio:has-proper-part	gb:BR1RC1GA1GF5GI1 .
 gb:BR1RC1GA1GF5GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA1GF5GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA1GF5GI1_6> .
@@ -389,7 +389,7 @@ gb:BR1RC1GA1Loc1	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA1Loc1/end> .
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF6 .
 gb:BR1RC1GA1GF6	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF6	ga:order	"2" .
-gb:BR1RC1GA1GF6	dcterms:identifier	"GA1GF6" .
+gb:BR1RC1GA1GF6	dcterms:identifier	"BR1RC1GA1GF6" .
 gb:BR1RC1GA1GF6	sio:has-proper-part	gb:BR1RC1GA1GF6GI1 .
 gb:BR1RC1GA1GF6GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA1GF6GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA1GF6GI1_23> .
@@ -434,7 +434,7 @@ gb:BR1RC1GA1Loc1	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA1Loc1/end> .
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF7 .
 gb:BR1RC1GA1GF7	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF7	ga:order	"1" .
-gb:BR1RC1GA1GF7	dcterms:identifier	"GA1GF7" .
+gb:BR1RC1GA1GF7	dcterms:identifier	"BR1RC1GA1GF7" .
 gb:BR1RC1GA1GF7	sio:has-proper-part	gb:BR1RC1GA1GF7GI1 .
 gb:BR1RC1GA1GF7GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA1GF7GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA1GF7GI1_27> .
@@ -479,7 +479,7 @@ gb:BR1RC1GA1Loc1	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA1Loc1/end> .
 gb:BR1RC1GA1	sio:has-direct-part	gb:BR1RC1GA1GF8 .
 gb:BR1RC1GA1GF8	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA1GF8	ga:order	"4" .
-gb:BR1RC1GA1GF8	dcterms:identifier	"GA1GF8" .
+gb:BR1RC1GA1GF8	dcterms:identifier	"BR1RC1GA1GF8" .
 gb:BR1RC1GA1GF8	sio:has-proper-part	gb:BR1RC1GA1GF8GI1 .
 gb:BR1RC1GA1GF8GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA1GF8GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA1GF8GI1_13> .
@@ -512,12 +512,12 @@ gb:BR1RC1GA1Loc1	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA1Loc1/end> .
 
 
 gb:BR1RC1	ga:has_abundance	gb:BR1RC1GA2 .
-gb:BR1RC1GA2	dcterms:identifier	"GA2" .
+gb:BR1RC1GA2	dcterms:identifier	"BR1RC1GA2" .
 gb:BR1RC1GA2	rdf:type	ga:Abundance .
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF1 .
 gb:BR1RC1GA2GF1	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF1	ga:order	"5" .
-gb:BR1RC1GA2GF1	dcterms:identifier	"GA2GF1" .
+gb:BR1RC1GA2GF1	dcterms:identifier	"BR1RC1GA2GF1" .
 gb:BR1RC1GA2GF1	sio:has-proper-part	gb:BR1RC1GA2GF1GI1 .
 gb:BR1RC1GA2GF1GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA2GF1GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF1GI1_7> .
@@ -575,7 +575,7 @@ gb:BR1RC1GA2Loc2	faldo:location <http://glyconavi.org/glycobio/BR1RC1GA2Loc2/pos
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF2 .
 gb:BR1RC1GA2GF2	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF2	ga:order	"6" .
-gb:BR1RC1GA2GF2	dcterms:identifier	"GA2GF2" .
+gb:BR1RC1GA2GF2	dcterms:identifier	"BR1RC1GA2GF2" .
 gb:BR1RC1GA2GF2	sio:has-proper-part	gb:BR1RC1GA2GF2GI1 .
 gb:BR1RC1GA2GF2GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA2GF2GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF2GI1_7> .
@@ -620,7 +620,7 @@ gb:BR1RC1GA2Loc2	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA2Loc2/end> .
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF3 .
 gb:BR1RC1GA2GF3	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF3	ga:order	"3" .
-gb:BR1RC1GA2GF3	dcterms:identifier	"GA2GF3" .
+gb:BR1RC1GA2GF3	dcterms:identifier	"BR1RC1GA2GF3" .
 gb:BR1RC1GA2GF3	sio:has-proper-part	gb:BR1RC1GA2GF3GI1 .
 gb:BR1RC1GA2GF3GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA2GF3GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF3GI1_9> .
@@ -665,7 +665,7 @@ gb:BR1RC1GA2Loc2	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA2Loc2/end> .
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF4 .
 gb:BR1RC1GA2GF4	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF4	ga:order	"3" .
-gb:BR1RC1GA2GF4	dcterms:identifier	"GA2GF4" .
+gb:BR1RC1GA2GF4	dcterms:identifier	"BR1RC1GA2GF4" .
 gb:BR1RC1GA2GF4	sio:has-proper-part	gb:BR1RC1GA2GF4GI1 .
 gb:BR1RC1GA2GF4GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA2GF4GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF4GI1_9> .
@@ -710,7 +710,7 @@ gb:BR1RC1GA2Loc2	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA2Loc2/end> .
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF5 .
 gb:BR1RC1GA2GF5	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF5	ga:order	"4" .
-gb:BR1RC1GA2GF5	dcterms:identifier	"GA2GF5" .
+gb:BR1RC1GA2GF5	dcterms:identifier	"BR1RC1GA2GF5" .
 gb:BR1RC1GA2GF5	sio:has-proper-part	gb:BR1RC1GA2GF5GI1 .
 gb:BR1RC1GA2GF5GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA2GF5GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF5GI1_8> .
@@ -755,7 +755,7 @@ gb:BR1RC1GA2Loc2	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA2Loc2/end> .
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF6 .
 gb:BR1RC1GA2GF6	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF6	ga:order	"6" .
-gb:BR1RC1GA2GF6	dcterms:identifier	"GA2GF6" .
+gb:BR1RC1GA2GF6	dcterms:identifier	"BR1RC1GA2GF6" .
 gb:BR1RC1GA2GF6	sio:has-proper-part	<http://glyconavi.org/glycobio/BR1RC1GA2GF6GI1> .
 <http://glyconavi.org/glycobio/BR1RC1GA2GF6GI1>	rdf:type	ga:Glycoform_Information .
 <http://glyconavi.org/glycobio/BR1RC1GA2GF6GI1>	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF6GI1_3> .
@@ -800,7 +800,7 @@ gb:BR1RC1GA2Loc2	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA2Loc2/end> .
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF7 .
 gb:BR1RC1GA2GF7	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF7	ga:order	"1" .
-gb:BR1RC1GA2GF7	dcterms:identifier	"GA2GF7" .
+gb:BR1RC1GA2GF7	dcterms:identifier	"BR1RC1GA2GF7" .
 gb:BR1RC1GA2GF7	sio:has-proper-part	gb:BR1RC1GA2GF7GI1 .
 gb:BR1RC1GA2GF7GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA2GF7GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF7GI1_35> .
@@ -845,7 +845,7 @@ gb:BR1RC1GA2Loc2	faldo:end	<http://glyconavi.org/glycobio/BR1RC1GA2Loc2/end> .
 gb:BR1RC1GA2	sio:has-direct-part	gb:BR1RC1GA2GF8 .
 gb:BR1RC1GA2GF8	rdf:type	glycan:Glycoform .
 gb:BR1RC1GA2GF8	ga:order	"2" .
-gb:BR1RC1GA2GF8	dcterms:identifier	"GA2GF8" .
+gb:BR1RC1GA2GF8	dcterms:identifier	"BR1RC1GA2GF8" .
 gb:BR1RC1GA2GF8	sio:has-proper-part	gb:BR1RC1GA2GF8GI1 .
 gb:BR1RC1GA2GF8GI1	rdf:type	ga:Glycoform_Information .
 gb:BR1RC1GA2GF8GI1	exterms:percentage	<http://glyconavi.org/glycobio/BR1RC1GA2GF8GI1_16> .
