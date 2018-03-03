@@ -97,7 +97,7 @@ C1	A1	F2	I1	GC1	M1	N1-4'@Asn52	N1-4'	G14996IQ	m1	Alditol	Reduction
 C1	A1	F3	I1	GC1	M1	N1-A@Asn52	N1-A	G53962WT	m1	Alditol	Reduction
 C1	A1	F4	I1	GC1	M1	N1-AB@Asn52	N1-AB	G65890UA	m1	Alditol	Reduction
 C1	A2	F1	I1	GC1	M1	N2@Asn78	N2	G77252PU	m1	Alditol	Reduction
-C1	A2	F2	I1	GC1	M1	N1-4'@Asn78 N1-4'	G14996IQ	m1	Alditol	Reduction
+C1	A2	F2	I1	GC1	M1	N1-4'@Asn78	N1-4'	G14996IQ	m1	Alditol	Reduction
 ####
 _loop	4
 form.class
