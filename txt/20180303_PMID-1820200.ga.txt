@@ -1,17 +1,14 @@
-data
-####
-_loop	1
+@pubmed	1
 citation.PubMed
 _line	1
 1820200
 ####
-_loop	2
+@glycosample	1
 glycosample.id
-resorce.id
 _line	1
-GS1	R1
+GS1
 ####
-_loop	5
+@resorce	5
 resorce.id
 bio.resorce.label
 protein.name
@@ -20,7 +17,7 @@ rdfs:comment
 _line	1
 R1	hCG	Human chorionic gonadotrophin	protein compelx	Heterodimeric glycoprotein hormone human chorionic gonadotrophin (hCG) have components of subunits hCG alpha and hCG beta.
 ####
-_loop	5
+@components	5
 resorce.id
 component.id
 component.Lablel
@@ -31,29 +28,29 @@ R1	C1	hCG alpha	S1	P01215
 R1	C2	hCG beta	S2	P0DN86
 ####
 $$$$
-_loop	1
+@component	1
 component.id
 _line	1
 C1
 ####
-_loop	1
+@date	1
 create.date
 _line	1
 2018-02-03
 ####
-_loop	3
+@class	3
 bio.resource.class
 resource.component.class
 sub.molecule.class
 _line	1
 sio:SIO_010497	glycan:Glycoprotein	sio:submolecular-entity
 ####
-_loop	1
+@sequence	1
 AA.Sequence
 _line	1
 MDYYRKYAAIFLVTLSVFLHVLHSAPDVQDCPECTLQENPFFSQPGAPILQCMGCCFSRAYPTPLRSKKTMLVQKNVTSESTCCVAKSYNRVTVMGGFKVENHTACHCSTCYYHKS
 ####
-_loop	4
+@abundance.info	4
 component.id
 glyco.abundance.id
 abundance.class
@@ -62,7 +59,7 @@ _line	2
 C1	A1	ga:Abundance	Glycan abundance of N-Glycosylation site (Asn-52) of hCG alpha
 C1	A2	ga:Abundance	Glycan abundance of N-Glycosylation site (Asn-78) of hCG alpha
 ####
-_loop	7
+@site	7
 component.id
 glyco.abundance.id   
 glyco.form.id
@@ -78,7 +75,7 @@ C1	A1	F4	Loc1	52	P01215  76
 C1	A2	F1	Loc2	78	P01215  102
 C1	A2	F2	Loc2	78	P01215  102
 ####
-_loop	12
+@glyco.component	12
 component.id
 glyco.abundance.id
 glyco.form.id
@@ -99,7 +96,7 @@ C1	A1	F4	I1	GC1	M1	N1-AB@Asn52	N1-AB	G65890UA	m1	Alditol	Reduction
 C1	A2	F1	I1	GC1	M1	N2@Asn78	N2	G77252PU	m1	Alditol	Reduction
 C1	A2	F2	I1	GC1	M1	N1-4'@Asn78	N1-4'	G14996IQ	m1	Alditol	Reduction
 ####
-_loop	4
+@glyco.class	4
 form.class
 information.class
 glyco.component.class
@@ -107,7 +104,7 @@ glyco.class
 _line	1
 glycan:Glycoform	ga:GlycoformInformation	sio:submolecular-entity	glycan:Saccharide
 ####
-_loop	8
+@abundance.ratio	8
 component.id
 glyco.abundance.id
 glyco.form.id
