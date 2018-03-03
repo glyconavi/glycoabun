@@ -1,113 +1,113 @@
 data
 ####
-_loop   1
+_loop	1
 citation.PubMed
-_line   1
+_line	1
 1820200
 ####
-_loop   2
+_loop	2
 glycosample.id
 resorce.id
-_line   1
+_line	1
 GS1	R1
 ####
-_loop   5
+_loop	5
 resorce.id
-bio.resorce.Label
+bio.resorce.label
 protein.name
 resorce.type
 rdfs:comment
-_line   1
+_line	1
 R1	hCG	Human chorionic gonadotrophin	protein compelx	Heterodimeric glycoprotein hormone human chorionic gonadotrophin (hCG) have components of subunits hCG alpha and hCG beta.
 ####
-_loop   5
+_loop	5
 resorce.id
 component.id
 component.Lablel
 sub.molecule.id
 UniProt.id
-_line   2
+_line	2
 R1	C1	hCG alpha	S1	P01215
 R1	C2	hCG beta	S2	P0DN86
 ####
 $$$$
-_loop   1
+_loop	1
 component.id
-_line   1
+_line	1
 C1
 ####
-_loop   1
+_loop	1
 create.date
-_line   1
+_line	1
 2018-02-03
 ####
-_loop   3
-bio.resource.Class
-resource.component.Class
-sub.molecule.Class
-_line   1
+_loop	3
+bio.resource.class
+resource.component.class
+sub.molecule.class
+_line	1
 sio:SIO_010497	glycan:Glycoprotein	sio:submolecular-entity
 ####
-_loop   1
+_loop	1
 AA.Sequence
-_line   1
+_line	1
 MDYYRKYAAIFLVTLSVFLHVLHSAPDVQDCPECTLQENPFFSQPGAPILQCMGCCFSRAYPTPLRSKKTMLVQKNVTSESTCCVAKSYNRVTVMGGFKVENHTACHCSTCYYHKS
 ####
-_loop   4
+_loop	4
 component.id
 glyco.abundance.id
-abundance.Class
-abundance.Label
-_line   2
-C1  A1	ga:Abundance	Glycan abundance of N-Glycosylation site (Asn-52) of hCG alpha
-C1  A2	ga:Abundance	Glycan abundance of N-Glycosylation site (Asn-78) of hCG alpha
+abundance.class
+abundance.label
+_line	2
+C1	A1	ga:Abundance	Glycan abundance of N-Glycosylation site (Asn-52) of hCG alpha
+C1	A2	ga:Abundance	Glycan abundance of N-Glycosylation site (Asn-78) of hCG alpha
 ####
-_loop   7
+_loop	7
 component.id
 glyco.abundance.id   
 glyco.form.id
 Location
-auth.Site
+auth.site
 UniProt.id
-UniProt.Site
-_line   6
-C1  A1  F1	Loc1	52	P01215  76
-C1  A1  F2	Loc1	52	P01215  76
-C1  A1  F3	Loc1	52	P01215  76
-C1  A1  F4	Loc1	52	P01215  76
-C1  A2  F1	Loc2	78	P01215  102
-C1  A2  F2	Loc2	78	P01215  102
+UniProt.site
+_line	6
+C1	A1	F1	Loc1	52	P01215  76
+C1	A1	F2	Loc1	52	P01215  76
+C1	A1	F3	Loc1	52	P01215  76
+C1	A1	F4	Loc1	52	P01215  76
+C1	A2	F1	Loc2	78	P01215  102
+C1	A2	F2	Loc2	78	P01215  102
 ####
-_loop   12
+_loop	12
 component.id
 glyco.abundance.id
 glyco.form.id
 glyco.information.id
 glyco.component.id
 glyco.component.molecule.id
-glyco.Label
+glyco.label
 auth.label
 GlyTouCan.id
 glyco.modification.id
 modified.glycan
 modification.method
-_line   6
-C1  A1	F1	I1	GC1	M1	N2@Asn52    N2	G77252PU	m1	Alditol	Reduction
-C1  A1	F2	I1	GC1	M1	N1-4'@Asn52 N1-4'	G14996IQ	m1	Alditol	Reduction
-C1  A1	F3	I1	GC1	M1	N1-A@Asn52  N1-A	G53962WT	m1	Alditol	Reduction
-C1  A1	F4	I1	GC1	M1	N1-AB@Asn52 N1-AB	G65890UA	m1	Alditol	Reduction
-C1  A2	F1	I1	GC1	M1	N2@Asn78    N2	G77252PU	m1	Alditol	Reduction
-C1  A2	F2	I1	GC1	M1	N1-4'@Asn78 N1-4'	G14996IQ	m1	Alditol	Reduction
+_line	6
+C1	A1	F1	I1	GC1	M1	N2@Asn52	N2	G77252PU	m1	Alditol	Reduction
+C1	A1	F2	I1	GC1	M1	N1-4'@Asn52	N1-4'	G14996IQ	m1	Alditol	Reduction
+C1	A1	F3	I1	GC1	M1	N1-A@Asn52	N1-A	G53962WT	m1	Alditol	Reduction
+C1	A1	F4	I1	GC1	M1	N1-AB@Asn52	N1-AB	G65890UA	m1	Alditol	Reduction
+C1	A2	F1	I1	GC1	M1	N2@Asn78	N2	G77252PU	m1	Alditol	Reduction
+C1	A2	F2	I1	GC1	M1	N1-4'@Asn78 N1-4'	G14996IQ	m1	Alditol	Reduction
 ####
-_loop   4
-form.Class
-information.Class
-glyco.component.Class
-glyco.Class
-_line   1
-glycan:Glycoform    ga:GlycoformInformation sio:submolecular-entity	glycan:Saccharide
+_loop	4
+form.class
+information.class
+glyco.component.class
+glyco.class
+_line	1
+glycan:Glycoform	ga:GlycoformInformation	sio:submolecular-entity	glycan:Saccharide
 ####
-_loop   8
+_loop	8
 component.id
 glyco.abundance.id
 glyco.form.id
@@ -116,15 +116,12 @@ abundance.ratio.from
 abundance.ratio.to
 abundance.type
 abundance.unit
-_line   6
-C1  A1  F1  I1	18  18	relative abundance  UO:0000193
-C1  A1  F2  I1	50  50	relative abundance  UO:0000193
-C1  A1  F3  I1	19  19	relative abundance  UO:0000193
-C1  A1  F4  I1	10  10	relative abundance  UO:0000193
-C1  A2  F1  I1	61  61	relative abundance  UO:0000193
-C1  A2  F2  I1	39  39	relative abundance  UO:0000193
+_line	6
+C1	A1	F1	I1	18  18	relative abundance	UO:0000193
+C1	A1	F2	I1	50  50	relative abundance	UO:0000193
+C1	A1	F3	I1	19  19	relative abundance	UO:0000193
+C1	A1	F4	I1	10  10	relative abundance	UO:0000193
+C1	A2	F1	I1	61  61	relative abundance	UO:0000193
+C1	A2	F2	I1	39  39	relative abundance	UO:0000193
 ####
 $$$$
-
-
-
