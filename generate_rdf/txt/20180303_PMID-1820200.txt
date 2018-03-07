@@ -1,0 +1,76 @@
+@date	1
+create.date
+_line	1
+2018-02-03
+####
+@pubmed	1
+citation.PubMed
+_line	1
+1820200
+####
+@glycosample	1
+glycosample.id
+_line	1
+GS1
+####
+@resorce	5
+resorce.id
+bio.resorce.label
+protein.name
+resorce.type
+rdfs:comment
+_line	1
+R1	hCG	Human chorionic gonadotrophin	protein compelx	Heterodimeric glycoprotein hormone human chorionic gonadotrophin (hCG) have components of subunits hCG alpha and hCG beta.
+####
+@components	4
+resorce.id
+referenced.protein.id
+referenced.protein.Lablel
+UniProt.id
+_line	2
+R1	RP1	hCG alpha	P01215
+R1	RP2	hCG beta	P0DN86
+####
+$$$$
+@protein.component	1
+referenced.protein.id
+_line	1
+RP1
+####
+@sequence	1
+AA.Sequence
+_line	1
+MDYYRKYAAIFLVTLSVFLHVLHSAPDVQDCPECTLQENPFFSQPGAPILQCMGCCFSRAYPTPLRSKKTMLVQKNVTSESTCCVAKSYNRVTVMGGFKVENHTACHCSTCYYHKS
+####
+@glycoform.info	6
+referenced.protein.id
+glycoform.id
+Location
+auth.site
+UniProt.site
+glycoform.label
+_line	2
+RP1	GF1	Loc1	52	76	Glycoform of N-Glycosylation site (Asn-52) of hCG alpha
+RP1	GF2	Loc2	78	102	Glycoform of N-Glycosylation site (Asn-78) of hCG alpha
+####
+@glycofrom.abun	8
+referenced.saccharide.id
+abundance.ratio.from
+abundance.ratio.to
+glyco.label
+auth.label
+GlyTouCan.id
+modified.glycan
+modification.method
+_line	6
+RS1	18	18	N2@Asn52	N2	G77252PU	Alditol	Reduction
+RS2	50	50	N1-4'@Asn52	N1-4'	G14996IQ	Alditol	Reduction
+RS3	19	19	N1-A@Asn52	N1-A	G53962WT	Alditol	Reduction
+RS4	10	10	N1-AB@Asn52	N1-AB	G65890UA	Alditol	Reduction
+RS5	61	61	N2@Asn78	N2	G77252PU	Alditol	Reduction
+RS6	39	39	N1-4'@Asn78	N1-4'	G14996IQ	Alditol	Reduction
+####
+$$$$
+
+
+
