@@ -22,36 +22,17 @@ PREFIX pav:   <http://purl.org/pav/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX wurcskey:  <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/>
 
-ga:Dataset	rdf:type <http://semanticscience.org/resource/SIO_000089> .
-ga:Dataset	rdfs:label	"Glycan Abundance Ratio" .
-
-<http://glyconavi.org/database/glycoabun>
-        a                           void:Dataset ;
-        dcterms:description        "Glycan abundance ratio -version 2018-03-08" ;
-        dcterms:license             <http://creativecommons.org/licenses/by/2.1/> ;
-        dcterms:publisher           <http://glyconavi.org> ;
-        dcterms:title              "GlycoAbun RDF" ;
-        pav:contributedBy           <https://orcid.org/0000-0001-9504-189X> ;
-        pav:version                "0.1d";
-        dcterms:hasVersion         <http://glyconavi.org/GlycoAbun/0.1d> ;
-        dcat:landingPage            <https://bio.glyconavi.org/GlycoAbun> .
-
-
-
-gb:GS3	gs:glycosample_id	"GS3" .
-gb:GS3	dcterms:identifier	"GS3" .
-gb:GS3	rdf:type	gs:Glycosample .
-gb:GS3	glycan:has_resource_entry	gb:R1 .
 gb:R1	rdfs:label	"oLH protein_complex" .
 gb:R1	rdf:type	ga:BioResource .
 gb:R1	rdf:type	sio:SIO_010497 . # protein complex
-gb:R1	gb:brid	"R1" .
 gb:R1	dcterms:identifier	"R1" .
 gb:R1	sio:has-component-part	gb:R1RP1 .
 gb:R1RP1	dcterms:identifier	"R1RP1" .
-gb:R1RP1	gb:rcid	"R1RP1" .
 gb:R1RP1   rdf:type	glycan:ReferencedProtein .
-gb:R1RP1	dcterms:refrence	<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620> .
+
+#gb:R1RP1	dcterms:refrence	<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620> .
+gb:R1RP1	glycan:published_in	<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620> .
+<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	rdf:type	glycan:Citation .
 <http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	rdfs:seeAlso	<http://identifiers.org/pmid/2209620> .
 <http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	dcterms:identifier	"2209620" .
 gb:R1RP1	sio:hasSynonym	"黄体形成ホルモン alpha chain" .
@@ -59,75 +40,14 @@ gb:R1RP1	sio:hasSynonym	"ovine lutropin alpha chain" .
 gb:R1RP1	ga:abbreviation	"oLH alpha" .
 gb:R1RP1	rdfs:label	"oLH alpha" .
 
+<http://purl.uniprot.org/uniprot/P01218>	ga:protein_subunit	"oLHα" .
+<http://purl.uniprot.org/uniprot/P01218>	rdfs:label	"ovine lutropin alpha chain protein" .
+<http://purl.uniprot.org/uniprot/P01218>	ga:aa_sequence	"MDYYRKYAAAILAILSLFLQILHSFPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPKNITSEATCCVAKAFTKATVMGNVRVENHTECHCSTCYYHKS" .
+<http://purl.uniprot.org/uniprot/P01218>	ga:aa_length	"120" .
+gb:R1RP1	sio:has_protein	<http://purl.uniprot.org/uniprot/P01218> .
 
-# glyco workshop
-# glycan:has_attached_glycan
-gb:R1RP1	glycan:has_attached_glycan	<http://glyconavi.org/glycan/neutral-glycan>	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:410192195006BFD03EF2138F91944722	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:486C9870363444210052897546CF587B	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:583AC95DAF8ED266AD7AEFDFE68AC66A	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:5A946B65EB97332DDB2BADFDFC95022D	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:80FBDDB00FC0CD2D86ACAAFB6D8ED00F	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:E65D1F062F126B19E121D7141DA2A110	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:FA5288315F251F388DB4BBE46B565DC7	.
-gb:R1RP1	glycan:has_attached_glycan	wurcskey:FA5288315F251F388DB4BBE46B565DC7	.
-# glyco workshop
-# glycan:is_glycosylated_on
-gb:R1RP1	glycan:is_glycosylated_at	gb:R1RP1Loc1 .
-gb:R1RP1	glycan:is_glycosylated_at	gb:R1RP1Loc2 .
-
-# glyco workshop
-# glycan:glycosylates_at
-# loc1
-<http://glyconavi.org/glycan/neutral-glycan>	glycan:glycosylates_at	gb:R1RP1Loc1 .
-wurcskey:C8286B5BB3EFBBA8291941FBC17D36AA	glycan:glycosylates_at	gb:R1RP1Loc1 .
-wurcskey:CA5109DF8318A5E0E36B0333D1DF3E47	glycan:glycosylates_at	gb:R1RP1Loc1 .
-wurcskey:4386E107A960643EA112F946D1B9E8CC	glycan:glycosylates_at	gb:R1RP1Loc1 .
-wurcskey:DA106DE6F3AF6E9DD565299D0E876C32	glycan:glycosylates_at	gb:R1RP1Loc1 .
-wurcskey:6340B1EFCCE02402C111EFC49A6DDE24	glycan:glycosylates_at	gb:R1RP1Loc1 .
-wurcskey:0AB19679850582854A6E8E44A7107F63	glycan:glycosylates_at	gb:R1RP1Loc1 .
-wurcskey:84F1FAABA987EF1A007F60FBC66D873B	glycan:glycosylates_at	gb:R1RP1Loc1 .
-# loc2
-<http://glyconavi.org/glycan/neutral-glycan>	glycan:glycosylates_at	gb:R1RP1Loc2	.
-wurcskey:C8286B5BB3EFBBA8291941FBC17D36AA	glycan:glycosylates_at	gb:R1RP1Loc2	.
-wurcskey:CA5109DF8318A5E0E36B0333D1DF3E47	glycan:glycosylates_at	gb:R1RP1Loc2	.
-wurcskey:4386E107A960643EA112F946D1B9E8CC	glycan:glycosylates_at	gb:R1RP1Loc2	.
-wurcskey:DA106DE6F3AF6E9DD565299D0E876C32	glycan:glycosylates_at	gb:R1RP1Loc2	.
-wurcskey:6340B1EFCCE02402C111EFC49A6DDE24	glycan:glycosylates_at	gb:R1RP1Loc2	.
-wurcskey:0AB19679850582854A6E8E44A7107F63	glycan:glycosylates_at	gb:R1RP1Loc2	.
-wurcskey:84F1FAABA987EF1A007F60FBC66D873B	glycan:glycosylates_at	gb:R1RP1Loc2	.
-
-
-# GlycoRDF glycan:Saccharide
-wurcskey:C8286B5BB3EFBBA8291941FBC17D36AA	rdf:type	glycan:Saccharide	.
-wurcskey:CA5109DF8318A5E0E36B0333D1DF3E47	rdf:type	glycan:Saccharide	.
-wurcskey:4386E107A960643EA112F946D1B9E8CC	rdf:type	glycan:Saccharide	.
-wurcskey:DA106DE6F3AF6E9DD565299D0E876C32	rdf:type	glycan:Saccharide	.
-wurcskey:6340B1EFCCE02402C111EFC49A6DDE24	rdf:type	glycan:Saccharide	.
-wurcskey:0AB19679850582854A6E8E44A7107F63	rdf:type	glycan:Saccharide	.
-wurcskey:84F1FAABA987EF1A007F60FBC66D873B	rdf:type	glycan:Saccharide	.
-
-# Glycan Author Label
-<http://glyconavi.org/glycan/neutral-glycan>	rdfs:label	"neutral oligosaccharides"	.
-wurcskey:C8286B5BB3EFBBA8291941FBC17D36AA	rdfs:label	"S2"	.
-wurcskey:CA5109DF8318A5E0E36B0333D1DF3E47	rdfs:label	"SN"	.
-wurcskey:4386E107A960643EA112F946D1B9E8CC	rdfs:label	"S1-6"	.
-wurcskey:DA106DE6F3AF6E9DD565299D0E876C32	rdfs:label	"S1-5"	.
-wurcskey:6340B1EFCCE02402C111EFC49A6DDE24	rdfs:label	"S1-4"	.
-wurcskey:0AB19679850582854A6E8E44A7107F63	rdfs:label	"S1-AB"	.
-wurcskey:84F1FAABA987EF1A007F60FBC66D873B	rdfs:label	"S1-A"	.
-
-
-
-gb:R1RP1P1	ga:protein_subunit	"oLHα" .
-gb:R1RP1P1	rdfs:label	"ovine lutropin alpha chain protein" .
-gb:R1RP1P1	ga:aa_sequence	"MDYYRKYAAAILAILSLFLQILHSFPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPKNITSEATCCVAKAFTKATVMGNVRVENHTECHCSTCYYHKS" .
-gb:R1RP1P1	ga:aa_length	"120" .
-gb:R1RP1	sio:has_protein	gb:R1RP1P1 .
-gb:R1RP1P1	dcterms:identifier	"P01218" .
-gb:R1RP1P1	ga:uniprot_id	"P01218" .
-gb:R1RP1P1	rdf:type	glycan:Glycoprotein .
-<http://purl.uniprot.org/uniprot/P01218>	rdf:type	up:Protein .
+<http://purl.uniprot.org/uniprot/P01218>	dcterms:identifier	"P01218" .
+<http://purl.uniprot.org/uniprot/P01218>	rdf:type	glycan:Glycoprotein .
 <http://purl.uniprot.org/uniprot/P01218>	dcterms:identifier	"P01218" .
 # Glyconnect
 <http://purl.uniprot.org/uniprot/P01218>	rdfs:label	"ovine lutropin alpha chain protein" .
@@ -136,15 +56,13 @@ gb:R1RP1P1	rdf:type	glycan:Glycoprotein .
 # Glyconnect
 <http://purl.uniprot.org/uniprot/P01218>	rdfs:seeAlso	<http://identifiers.org/uniprot/P01218> .
 
-#gb:R1RP1P1	ga:has_n-linked_site	"80" .
-#gb:R1RP1P1	ga:has_n-linked_site	"106" .
+#<http://purl.uniprot.org/uniprot/P01218>	ga:has_n-linked_site	"80" .
+#<http://purl.uniprot.org/uniprot/P01218>	ga:has_n-linked_site	"106" .
 
 gb:R1RP1	glycan:has_glycoform	gb:R1RP1GF1 .
 gb:R1RP1RS1	glycan:has_glycoform	gb:R1RP1GF1 .
 gb:R1RP1GF1	rdf:type	glycan:Glycoform .
-gb:R1RP1GF1	ga:order	"3" .
 gb:R1RP1GF1	dcterms:identifier	"R1RP1GF1" .
-gb:R1RP1GF1	exterms:percentage	gb:R1RP1GF1_16 .
 gb:R1RP1	sio:has_attached_glycan	gb:R1RP1RS1 .
 gb:R1RP1RS1	rdf:type	glycan:ReferencedSaccharide .
 gb:R1RP1RS1	glycan:has_glycan	<htps://glytoucan.org/Structure/Glycans/G65117HG> .
@@ -157,17 +75,9 @@ gb:R1RP1RS1	exterms:percentage	gb:R1RP1RS1_percentage .
 gb:R1RP1RS1_percentage	rdf:type	glycan:RelativeAbundance .
 gb:R1RP1RS1_percentage	rdfs:comment	"Relative abundance of glycan" .
 
-gb:R1RP1RS1_percentage	ga:from	gb:R1RP1RS1_percentage_from .
-gb:R1RP1RS1_percentage	ga:to	gb:R1RP1RS1_percentage_to .
-
-gb:R1RP1RS1_percentage_from	sio:has-value	"16" .
-gb:R1RP1RS1_percentage_from	sio:has-unit	"UO:0000193" .
-gb:R1RP1RS1_percentage_from	rdf:type	sio:SIO_001018 .
-
-gb:R1RP1RS1_percentage_to	ga:to	gb:R1RP1RS1_percentage_to .
-gb:R1RP1RS1_percentage_to	sio:has-value	"16" .
-gb:R1RP1RS1_percentage_to	sio:has-unit	UO:0000193 .
-gb:R1RP1RS1_percentage_to	rdf:type	sio:SIO_001018 .
+gb:R1RP1RS1_percentage	sio:has-value	"16" .
+gb:R1RP1RS1_percentage	sio:has-unit	"UO:0000193" .
+gb:R1RP1RS1_percentage	rdf:type	sio:SIO_001018 .
 
 
 gb:R1RP1	glycan:is_glycosylated_at	gb:R1RP1Loc1 .
