@@ -1,0 +1,128 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX faldo: <http://biohackathon.org/resource/faldo#>
+PREFIX UO: <http://purl.obolibrary.org/obo/>
+PREFIX gs: <http://glyconavi.org/glycosample/>
+PREFIX ga: <http://glyconavi.org/glyabun/>
+PREFIX gb: <http://glyconavi.org/glycobio/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX chebi: <http://bio2rdf.org/chebi:>
+PREFIX exterms: <http://www.example.org/terms/>
+PREFIX pav:   <http://purl.org/pav/>
+PREFIX dcat:  <http://www.w3.org/ns/dcat#>
+PREFIX wurcskey:  <http://purl.jp/bio/12/glyco/wurcs/WURCSKey=2.0/MD5/>
+
+gb:R2	rdfs:label	"Human chorionic gonadotrophin" .
+gb:R2	rdf:type	ga:BioResource .
+gb:R2	rdf:type	sio:SIO_010497 . # protein complex
+gb:R2	dcterms:identifier	"R2" .
+gb:R2	sio:has-component-part	gb:R2RP1 .
+gb:R2RP1	dcterms:identifier	"R1RP2" .
+gb:R2RP1   rdf:type	glycan:ReferencedProtein .
+
+#gb:R2RP1	dcterms:refrence	<http://rdf.ncbi.nlm.nih.gov/pubmed/1820200> .
+gb:R2RP1	glycan:published_in	<http://rdf.ncbi.nlm.nih.gov/pubmed/1820200> .
+<http://rdf.ncbi.nlm.nih.gov/pubmed/1820200>	rdf:type	glycan:Citation .
+<http://rdf.ncbi.nlm.nih.gov/pubmed/1820200>	rdfs:seeAlso	<http://identifiers.org/pmid/1820200> .
+<http://rdf.ncbi.nlm.nih.gov/pubmed/1820200>	dcterms:identifier	"1820200" .
+#gb:R2RP1	sio:hasSynonym	"黄体形成ホルモン alpha chain" .
+#gb:R2RP1	sio:hasSynonym	"ovine lutropin alpha chain" .
+#gb:R2RP1	ga:abbreviation	"oLH alpha" .
+gb:R2RP1	rdfs:label	"hCGα" .
+
+<http://purl.uniprot.org/uniprot/P01215>	ga:protein_subunit	"hCGα" .
+<http://purl.uniprot.org/uniprot/P01215>	rdfs:label	"Human chorionic gonadotrophin alpha subunit" .
+<http://purl.uniprot.org/uniprot/P01215>	ga:aa_sequence	"MDYYRKYAAIFLVTLSVFLHVLHSAPDVQDCPECTLQENPFFSQPGAPILQCMGCCFSRAYPTPLRSKKTMLVQKNVTSESTCCVAKSYNRVTVMGGFKVENHTACHCSTCYYHKS" .
+<http://purl.uniprot.org/uniprot/P01215>	ga:aa_length	"116" .
+gb:R2RP1	glycan:has_protein	<http://purl.uniprot.org/uniprot/P01215> .
+
+<http://purl.uniprot.org/uniprot/P01215>	dcterms:identifier	"P01215" .
+<http://purl.uniprot.org/uniprot/P01215>	rdf:type	glycan:Glycoprotein .
+<http://purl.uniprot.org/uniprot/P01215>	dcterms:identifier	"P01215" .
+# Glyconnect
+<http://purl.uniprot.org/uniprot/P01215>	rdfs:label	"Glycoprotein hormones alpha chain" .
+# Glyconnect
+<http://purl.uniprot.org/uniprot/P01215>	foaf:primaryTopic 	<http://identifiers.org/uniprot/P01215> .
+# Glyconnect
+<http://purl.uniprot.org/uniprot/P01215>	rdfs:seeAlso	<http://identifiers.org/uniprot/P01215> .
+
+#<http://purl.uniprot.org/uniprot/P01215>	ga:has_n-linked_site	"80" .
+#<http://purl.uniprot.org/uniprot/P01215>	ga:has_n-linked_site	"106" .
+
+gb:R2RP1	glycan:has_glycoform	gb:R2RP1GF1 .
+gb:R2RP1RS1	glycan:has_glycoform	gb:R2RP1GF1 .
+gb:R2RP1GF1	rdf:type	glycan:Glycoform .
+gb:R2RP1GF1	dcterms:identifier	"R1RP2GF1" .
+
+gb:R2RP1	glycan:has_attached_glycan	gb:R2RP1RS1 .
+gb:R2RP1RS1	rdf:type	glycan:ReferencedSaccharide .
+gb:R2RP1RS1	glycan:has_glycan	<htps://glytoucan.org/Structure/Glycans/G17689DH> .
+<htps://glytoucan.org/Structure/Glycans/G17689DH>	rdf:type	glycan:Saccharide .
+<htps://glytoucan.org/Structure/Glycans/G17689DH>	rdfs:seeAlso	<http://identifiers.org/glytoucan/G17689DH>	.
+<htps://glytoucan.org/Structure/Glycans/G17689DH> dcterms:identifier  "G17689DH" .
+
+gb:R2RP1RS1	rdf:type	glycan:ReferencedSaccharide .
+gb:R2RP1RS1	exterms:percentage	gb:R2RP1RS1_percentage .
+gb:R2RP1RS1_percentage	rdf:type	glycan:RelativeAbundance .
+gb:R2RP1RS1_percentage	rdfs:comment	"Relative abundance of glycan" .
+
+gb:R2RP1RS1_percentage	sio:has-value	"18" .
+gb:R2RP1RS1_percentage	sio:has-unit	UO:0000193 .
+gb:R2RP1RS1_percentage	rdf:type	sio:SIO_001018 .
+
+
+gb:R2RP1	glycan:is_glycosylated_at	gb:R2RP1Loc1 .
+gb:R2RP1Loc1	rdf:type glycan:Glycosylation_site .
+
+gb:R2RP1Loc1	faldo:location	gb:R2RP1Loc1pos .
+gb:R2RP1Loc1pos	rdf:type	faldo:ExactPosition .
+gb:R2RP1Loc1pos	faldo:position	"76"^^xsd:int .
+
+# author position
+gb:R2RP1Loc1	faldo:location gb:R2RP1Loc1pos-auth .
+gb:R2RP1Loc1pos-auth	rdf:type	ga:AuthorPosition .
+gb:R2RP1Loc1pos-auth	faldo:position	"52"^^xsd:int .
+gb:R2RP1Loc1pos-auth	rdfs:label	"author position is 52" .
+
+#
+gb:R2RP1	glycan:has_attached_glycan	gb:R2RP1RS2 .
+gb:R2RP1RS2	rdf:type	glycan:ReferencedSaccharide .
+gb:R2RP1RS2	glycan:has_glycan	<htps://glytoucan.org/Structure/Glycans/G48954CA> .
+<htps://glytoucan.org/Structure/Glycans/G48954CA>	rdf:type	glycan:Saccharide .
+<htps://glytoucan.org/Structure/Glycans/G48954CA>	rdfs:seeAlso	<http://identifiers.org/glytoucan/G48954CA>	.
+<htps://glytoucan.org/Structure/Glycans/G48954CA> dcterms:identifier  "G48954CA" .
+
+gb:R2RP1RS2	rdf:type	glycan:ReferencedSaccharide .
+gb:R2RP1RS2	exterms:percentage	gb:R2RP1RS2_percentage .
+gb:R2RP1RS2_percentage	rdf:type	glycan:RelativeAbundance .
+gb:R2RP1RS2_percentage	rdfs:comment	"Relative abundance of glycan" .
+
+gb:R2RP1RS2_percentage	sio:has-value	"50" .
+gb:R2RP1RS2_percentage	sio:has-unit	UO:0000193 .
+gb:R2RP1RS2_percentage	rdf:type	sio:SIO_001018 .
+
+
+gb:R2RP1	glycan:is_glycosylated_at	gb:R2RP1Loc2 .
+gb:R2RP1Loc2	rdf:type glycan:Glycosylation_site .
+
+gb:R2RP1Loc2	faldo:location	gb:R2RP1Loc2pos .
+gb:R2RP1Loc2pos	rdf:type	faldo:ExactPosition .
+gb:R2RP1Loc2pos	faldo:position	"76"^^xsd:int .
+
+# author position
+gb:R2RP1Loc2	faldo:location gb:R2RP1Loc2pos-auth .
+gb:R2RP1Loc2pos-auth	rdf:type	ga:AuthorPosition .
+gb:R2RP1Loc2pos-auth	faldo:position	"52"^^xsd:int .
+gb:R2RP1Loc2pos-auth	rdfs:label	"author position is 52" .
+
+
