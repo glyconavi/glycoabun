@@ -76,7 +76,7 @@ gb:R1RP1RS1_percentage	rdf:type	glycan:RelativeAbundance .
 gb:R1RP1RS1_percentage	rdfs:comment	"Relative abundance of glycan" .
 
 gb:R1RP1RS1_percentage	sio:has-value	"16" .
-gb:R1RP1RS1_percentage	sio:has-unit	"UO:0000193" .
+gb:R1RP1RS1_percentage	sio:has-unit	UO:0000193 .
 gb:R1RP1RS1_percentage	rdf:type	sio:SIO_001018 .
 
 
