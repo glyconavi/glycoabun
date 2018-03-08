@@ -35,16 +35,16 @@ gb:R1RP1	glycan:published_in	<http://rdf.ncbi.nlm.nih.gov/pubmed/2209620> .
 <http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	rdf:type	glycan:Citation .
 <http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	rdfs:seeAlso	<http://identifiers.org/pmid/2209620> .
 <http://rdf.ncbi.nlm.nih.gov/pubmed/2209620>	dcterms:identifier	"2209620" .
-gb:R1RP1	sio:hasSynonym	"黄体形成ホルモン alpha chain" .
-gb:R1RP1	sio:hasSynonym	"ovine lutropin alpha chain" .
-gb:R1RP1	ga:abbreviation	"oLH alpha" .
+#gb:R1RP1	sio:hasSynonym	"黄体形成ホルモン alpha chain" .
+#gb:R1RP1	sio:hasSynonym	"ovine lutropin alpha chain" .
+#gb:R1RP1	ga:abbreviation	"oLH alpha" .
 gb:R1RP1	rdfs:label	"oLH alpha" .
 
 <http://purl.uniprot.org/uniprot/P01218>	ga:protein_subunit	"oLHα" .
 <http://purl.uniprot.org/uniprot/P01218>	rdfs:label	"ovine lutropin alpha chain protein" .
 <http://purl.uniprot.org/uniprot/P01218>	ga:aa_sequence	"MDYYRKYAAAILAILSLFLQILHSFPDGEFTMQGCPECKLKENKYFSKPDAPIYQCMGCCFSRAYPTPARSKKTMLVPKNITSEATCCVAKAFTKATVMGNVRVENHTECHCSTCYYHKS" .
 <http://purl.uniprot.org/uniprot/P01218>	ga:aa_length	"120" .
-gb:R1RP1	sio:has_protein	<http://purl.uniprot.org/uniprot/P01218> .
+gb:R1RP1	glycan:has_protein	<http://purl.uniprot.org/uniprot/P01218> .
 
 <http://purl.uniprot.org/uniprot/P01218>	dcterms:identifier	"P01218" .
 <http://purl.uniprot.org/uniprot/P01218>	rdf:type	glycan:Glycoprotein .
@@ -63,7 +63,7 @@ gb:R1RP1	glycan:has_glycoform	gb:R1RP1GF1 .
 gb:R1RP1RS1	glycan:has_glycoform	gb:R1RP1GF1 .
 gb:R1RP1GF1	rdf:type	glycan:Glycoform .
 gb:R1RP1GF1	dcterms:identifier	"R1RP1GF1" .
-gb:R1RP1	sio:has_attached_glycan	gb:R1RP1RS1 .
+gb:R1RP1	glycan:has_attached_glycan	gb:R1RP1RS1 .
 gb:R1RP1RS1	rdf:type	glycan:ReferencedSaccharide .
 gb:R1RP1RS1	glycan:has_glycan	<htps://glytoucan.org/Structure/Glycans/G65117HG> .
 <htps://glytoucan.org/Structure/Glycans/G65117HG>	rdf:type	glycan:Saccharide .
