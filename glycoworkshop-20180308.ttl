@@ -79,7 +79,7 @@ gb:R1RP1RS1_percentage	sio:has-value	"16" .
 gb:R1RP1RS1_percentage	sio:has-unit	UO:0000193 .
 gb:R1RP1RS1_percentage	rdf:type	sio:SIO_001018 .
 
-
+gb:R1RP1GF1	glycan:is_glycosylated_at	gb:R1RP1Loc1 .
 gb:R1RP1	glycan:is_glycosylated_at	gb:R1RP1Loc1 .
 gb:R1RP1Loc1	rdf:type glycan:Glycosylation_site .
 
