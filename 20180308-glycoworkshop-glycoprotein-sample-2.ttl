@@ -60,7 +60,8 @@ gb:R2RP1	glycan:has_protein	<http://purl.uniprot.org/uniprot/P01215> .
 #<http://purl.uniprot.org/uniprot/P01215>	ga:has_n-linked_site	"106" .
 
 gb:R2RP1	glycan:has_glycoform	gb:R2RP1GF1 .
-gb:R2RP1RS1	glycan:has_glycoform	gb:R2RP1GF1 .
+# 2018-03-09
+gb:R2RP1GF1 	glycan:has_saccharide	gb:R2RP1RS1 .
 gb:R2RP1GF1	rdf:type	glycan:Glycoform .
 gb:R2RP1GF1	dcterms:identifier	"R1RP2GF1" .
 
