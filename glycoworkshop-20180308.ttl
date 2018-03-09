@@ -65,6 +65,8 @@ gb:R1RP1GF1	rdf:type	glycan:Glycoform .
 gb:R1RP1GF1	dcterms:identifier	"R1RP1GF1" .
 gb:R1RP1	glycan:has_attached_glycan	gb:R1RP1RS1 .
 gb:R1RP1RS1	rdf:type	glycan:ReferencedSaccharide .
+# 2018-03-09
+gb:R1RP1GF1	glycan:has_saccharide gb:R1RP1RS1 .
 gb:R1RP1RS1	glycan:has_glycan	<htps://glytoucan.org/Structure/Glycans/G65117HG> .
 <htps://glytoucan.org/Structure/Glycans/G65117HG>	rdf:type	glycan:Saccharide .
 <htps://glytoucan.org/Structure/Glycans/G65117HG>	rdfs:seeAlso	<http://identifiers.org/glytoucan/G65117HG>	.
